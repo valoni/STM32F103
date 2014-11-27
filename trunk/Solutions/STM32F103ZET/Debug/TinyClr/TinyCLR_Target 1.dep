@@ -1,0 +1,7 @@
+Dependencies for Project 'TinyCLR', Target 'Target 1': (DO NOT MODIFY !)
+F (..\..\..\..\CLR\StartupLib\CLRStartup.cpp)(0x543F93F3)(--cpp -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -o "C:\MFBin\STM32F103ZET\clrstartup.o" --omf_browse "C:\MFBin\STM32F103ZET\clrstartup.crf" --depend "C:\MFBin\STM32F103ZET\clrstartup.d")
+I (..\..\..\..\CLR\StartupLib\CLRStartup.h)(0x4CAC1E6C)
+F (..\..\..\..\DeviceCode\Initialization\tinyhal.cpp)(0x501F2EFC)(--cpp -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -o "C:\MFBin\STM32F103ZET\tinyhal.o" --omf_browse "C:\MFBin\STM32F103ZET\tinyhal.crf" --depend "C:\MFBin\STM32F103ZET\tinyhal.d")
+F (..\..\..\..\DeviceCode\cores\arm\fastcompile_tinyhal.cpp)(0x4CAC1E70)(--cpp -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -o "C:\MFBin\STM32F103ZET\fastcompile_tinyhal.o" --omf_browse "C:\MFBin\STM32F103ZET\fastcompile_tinyhal.crf" --depend "C:\MFBin\STM32F103ZET\fastcompile_tinyhal.d")
+F (..\..\..\..\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Bootstrap\STM32_bootstrap.cpp)(0x4E4996E0)()
+F (..\..\..\..\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_IntC\STM32_intc_functions.cpp)(0x4E4996E0)()

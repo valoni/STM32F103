@@ -1,0 +1,2180 @@
+生成启动时间为 2014/11/26 18:53:57。
+     0>C:\PK\Framework\Features\Hardware.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\SerialPort.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\SerialPort.featureproj(7,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\serial_port.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (44,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\Usb.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\Usb.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\Usb.featureproj(7,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\USB_Port.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (46,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\I2C.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\SPI.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\TinyCore.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\TinyCore.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\PWM.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\PWM.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     0>C:\PK\Framework\Features\DataStorage.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\BlockStorage_PAL.libcatproj”。可能已在“C:\PK\Framework\Features\BlockStorage.featureproj (5,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。[C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj]
+     0>C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj(55,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Graphics.featureproj”。可能已在“C:\PK\Framework\Features\TinyCore.featureproj (7,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+     1>项目“C:\PK\Solutions\STM32F103ZET\dotnetmf.proj”在节点 1 上(build 个目标)。
+     1>项目“C:\PK\Solutions\STM32F103ZET\dotnetmf.proj”(1)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2) (Build 个目标)。
+     2>StartMessage:
+         Doing build of Executable tinyclr - rule is BuildAXF;BuildSigFiles
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Core\dotnetmf.proj”(5) (Build 个目标)。
+     5>StartMessage:
+         Doing build of Library Core - rule is ArmBuildLib
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\HeapPersistence\dotNetMF.proj”(6) (默认目标)。
+     6>StartMessage:
+         Doing build of Library HeapPersistence - rule is ArmBuildLib
+     6>项目“C:\PK\CLR\Core\HeapPersistence\dotNetMF.proj”(6)正在节点 1 上生成“C:\PK\CLR\Core\HeapPersistence\dotNetMF_Stub.proj”(7) (Build 个目标)。
+     7>StartMessage:
+         Doing build of Library HeapPersistence_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     7>已完成生成项目“C:\PK\CLR\Core\HeapPersistence\dotNetMF_Stub.proj”(Build 个目标)的操作。
+     6>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     6>已完成生成项目“C:\PK\CLR\Core\HeapPersistence\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\I2C\dotNetMF.proj”(8) (默认目标)。
+     8>StartMessage:
+         Doing build of Library I2C - rule is ArmBuildLib
+     8>项目“C:\PK\CLR\Core\I2C\dotNetMF.proj”(8)正在节点 1 上生成“C:\PK\CLR\Core\I2C\dotNetMF_Stub.proj”(9) (Build 个目标)。
+     9>StartMessage:
+         Doing build of Library I2C_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     9>已完成生成项目“C:\PK\CLR\Core\I2C\dotNetMF_Stub.proj”(Build 个目标)的操作。
+     8>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     8>已完成生成项目“C:\PK\CLR\Core\I2C\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\IOPort\dotNetMF.proj”(10) (默认目标)。
+    10>StartMessage:
+         Doing build of Library IOPort - rule is ArmBuildLib
+    10>项目“C:\PK\CLR\Core\IOPort\dotNetMF.proj”(10)正在节点 1 上生成“C:\PK\CLR\Core\IOPort\dotNetMF_Stub.proj”(11) (Build 个目标)。
+    11>StartMessage:
+         Doing build of Library IOPort_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    11>已完成生成项目“C:\PK\CLR\Core\IOPort\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    10>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    10>已完成生成项目“C:\PK\CLR\Core\IOPort\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\RPC\dotNetMF.proj”(12) (默认目标)。
+    12>StartMessage:
+         Doing build of Library RPC - rule is ArmBuildLib
+    12>项目“C:\PK\CLR\Core\RPC\dotNetMF.proj”(12)正在节点 1 上生成“C:\PK\CLR\Core\RPC\dotNetMF_Stub.proj”(13) (Build 个目标)。
+    13>StartMessage:
+         Doing build of Library RPC_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    13>已完成生成项目“C:\PK\CLR\Core\RPC\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    12>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    12>已完成生成项目“C:\PK\CLR\Core\RPC\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\Serialization\dotNetMF.proj”(14) (默认目标)。
+    14>StartMessage:
+         Doing build of Library Serialization - rule is ArmBuildLib
+    14>项目“C:\PK\CLR\Core\Serialization\dotNetMF.proj”(14)正在节点 1 上生成“C:\PK\CLR\Core\Serialization\dotNetMF_Stub.proj”(15) (Build 个目标)。
+    15>StartMessage:
+         Doing build of Library Serialization_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    15>已完成生成项目“C:\PK\CLR\Core\Serialization\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    14>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    14>已完成生成项目“C:\PK\CLR\Core\Serialization\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\Stream\dotNetMF.proj”(16) (默认目标)。
+    16>StartMessage:
+         Doing build of Library Stream - rule is ArmBuildLib
+    16>项目“C:\PK\CLR\Core\Stream\dotNetMF.proj”(16)正在节点 1 上生成“C:\PK\CLR\Core\Stream\dotNetMF_Stub.proj”(17) (Build 个目标)。
+    17>StartMessage:
+         Doing build of Library Stream_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    17>已完成生成项目“C:\PK\CLR\Core\Stream\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    16>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    16>已完成生成项目“C:\PK\CLR\Core\Stream\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\Hardware\dotNetMF.proj”(18) (默认目标)。
+    18>StartMessage:
+         Doing build of Library Hardware - rule is ArmBuildLib
+    18>项目“C:\PK\CLR\Core\Hardware\dotNetMF.proj”(18)正在节点 1 上生成“C:\PK\CLR\Core\Hardware\InterruptHandler\dotNetMF.proj”(19) (默认目标)。
+    19>StartMessage:
+         Doing build of Library InterruptHandler - rule is ArmBuildLib
+    19>项目“C:\PK\CLR\Core\Hardware\InterruptHandler\dotNetMF.proj”(19)正在节点 1 上生成“C:\PK\CLR\Core\Hardware\InterruptHandler\dotNetMF_Stub.proj”(20) (Build 个目标)。
+    20>StartMessage:
+         Doing build of Library InterruptHandler_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    20>已完成生成项目“C:\PK\CLR\Core\Hardware\InterruptHandler\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    19>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    19>已完成生成项目“C:\PK\CLR\Core\Hardware\InterruptHandler\dotNetMF.proj”(默认目标)的操作。
+    18>项目“C:\PK\CLR\Core\Hardware\dotNetMF.proj”(18)正在节点 1 上生成“C:\PK\CLR\Core\Hardware\dotNetMF_Stub.proj”(21) (Build 个目标)。
+    21>StartMessage:
+         Doing build of Library Hardware_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    21>已完成生成项目“C:\PK\CLR\Core\Hardware\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    18>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    18>已完成生成项目“C:\PK\CLR\Core\Hardware\dotNetMF.proj”(默认目标)的操作。
+     5>项目“C:\PK\CLR\Core\dotnetmf.proj”(5)正在节点 1 上生成“C:\PK\CLR\Core\Xml\dotNetMF.proj”(22) (默认目标)。
+    22>StartMessage:
+         Doing build of Library Xml - rule is ArmBuildLib
+    22>项目“C:\PK\CLR\Core\Xml\dotNetMF.proj”(22)正在节点 1 上生成“C:\PK\CLR\Core\Xml\dotNetMF_Stub.proj”(23) (Build 个目标)。
+    23>StartMessage:
+         Doing build of Library Xml_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    23>已完成生成项目“C:\PK\CLR\Core\Xml\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    22>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    22>已完成生成项目“C:\PK\CLR\Core\Xml\dotNetMF.proj”(默认目标)的操作。
+     5>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     5>已完成生成项目“C:\PK\CLR\Core\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\StartupLib\dotnetmf.proj”(24) (Build 个目标)。
+    24>StartMessage:
+         Doing build of Library CLRStartup - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    24>已完成生成项目“C:\PK\CLR\StartupLib\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Libraries\CorLib\dotnetmf.proj”(25) (Build 个目标)。
+    25>StartMessage:
+         Doing build of Library CorLib - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    25>已完成生成项目“C:\PK\CLR\Libraries\CorLib\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT\dotnetmf.proj”(26) (Build 个目标)。
+    26>StartMessage:
+         Doing build of Library SPOT - rule is ArmBuildLib
+    26>项目“C:\PK\CLR\Libraries\SPOT\dotnetmf.proj”(26)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT\SPOT_Messaging\dotNetMF.proj”(27) (默认目标)。
+    27>StartMessage:
+         Doing build of Library SPOT_Messaging - rule is ArmBuildLib
+    27>项目“C:\PK\CLR\Libraries\SPOT\SPOT_Messaging\dotNetMF.proj”(27)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT\SPOT_Messaging\dotNetMF_Stub.proj”(28) (Build 个目标)。
+    28>StartMessage:
+         Doing build of Library SPOT_Messaging_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    28>已完成生成项目“C:\PK\CLR\Libraries\SPOT\SPOT_Messaging\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    27>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    27>已完成生成项目“C:\PK\CLR\Libraries\SPOT\SPOT_Messaging\dotNetMF.proj”(默认目标)的操作。
+    26>项目“C:\PK\CLR\Libraries\SPOT\dotnetmf.proj”(26)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT\SPOT_Serialization\dotNetMF.proj”(29) (默认目标)。
+    29>StartMessage:
+         Doing build of Library SPOT_Serialization - rule is ArmBuildLib
+    29>项目“C:\PK\CLR\Libraries\SPOT\SPOT_Serialization\dotNetMF.proj”(29)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT\SPOT_Serialization\dotNetMF_Stub.proj”(30) (Build 个目标)。
+    30>StartMessage:
+         Doing build of Library SPOT_Serialization_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    30>已完成生成项目“C:\PK\CLR\Libraries\SPOT\SPOT_Serialization\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    29>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    29>已完成生成项目“C:\PK\CLR\Libraries\SPOT\SPOT_Serialization\dotNetMF.proj”(默认目标)的操作。
+    26>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    26>已完成生成项目“C:\PK\CLR\Libraries\SPOT\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\clr\core\InteropAssembliesTable.proj”(31) (Build 个目标)。
+    31>StartMessage:
+         Doing build of Library InteropAssembliesTable - rule is ArmBuildLib
+       GenerateInteropTable:
+         Generating C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_InteropAssembliesTable.cpp
+       DelBuildLib:
+         del /q  C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\InteropAssembliesTable.lib
+         del /q  C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\InteropAssembliesTable.lib.manifest
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\TinyCLR -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_InteropAssembliesTable.obj -c C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_InteropAssembliesTable.cpp
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\TinyCLR -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_RuntimeMemory.obj -c C:\PK\CLR\Core\CLR_RT_RuntimeMemory.cpp
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\TinyCLR -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_InteropAssembliesTable.obj -c C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_InteropAssembliesTable.cpp  
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\TinyCLR -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\CLR_RT_RuntimeMemory.obj -c C:\PK\CLR\Core\CLR_RT_RuntimeMemory.cpp  
+       ArmBuildLib:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\InteropAssembliesTable.lib CLR_RT_InteropAssembliesTable.obj CLR_RT_RuntimeMemory.obj     
+    31>已完成生成项目“C:\PK\clr\core\InteropAssembliesTable.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\drivers\LargeBuffer\stubs\dotnetmf.proj”(32) (Build 个目标)。
+    32>StartMessage:
+         Doing build of Library LargeBuffer_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    32>已完成生成项目“C:\PK\DeviceCode\drivers\LargeBuffer\stubs\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33) (Build 个目标)。
+    33>StartMessage:
+         Doing build of Library SPOT_Hardware - rule is ArmBuildLib
+    33>项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Serial\dotNetMF.proj”(34) (默认目标)。
+    34>StartMessage:
+         Doing build of Library SPOT_Hardware_SerialPort - rule is ArmBuildLib
+    34>项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Serial\dotNetMF.proj”(34)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Serial\dotNetMF_Stub.proj”(35) (Build 个目标)。
+    35>StartMessage:
+         Doing build of Library SPOT_Hardware_SerialPort_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    35>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Serial\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    34>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    34>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Serial\dotNetMF.proj”(默认目标)的操作。
+    33>项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Usb\dotNetMF.proj”(36) (默认目标)。
+    36>StartMessage:
+         Doing build of Library SPOT_Hardware_Usb - rule is ArmBuildLib
+    36>项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Usb\dotNetMF.proj”(36)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Usb\dotNetMF_Stub.proj”(37) (Build 个目标)。
+    37>StartMessage:
+         Doing build of Library SPOT_Hardware_Usb_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    37>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Usb\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    36>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    36>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_Usb\dotNetMF.proj”(默认目标)的操作。
+    33>项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_PWM\dotNetMF.proj”(38) (默认目标)。
+    38>StartMessage:
+         Doing build of Library SPOT_Hardware_PWM - rule is ArmBuildLib
+    38>项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_PWM\dotNetMF.proj”(38)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_PWM\dotNetMF_Stub.proj”(39) (Build 个目标)。
+    39>StartMessage:
+         Doing build of Library SPOT_Hardware_PWM_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    39>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_PWM\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    38>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    38>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_PWM\dotNetMF.proj”(默认目标)的操作。
+    33>项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_OneWire\dotNetMF.proj”(40) (默认目标)。
+    40>StartMessage:
+         Doing build of Library SPOT_Hardware_OneWire - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    40>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\SPOT_OneWire\dotNetMF.proj”(默认目标)的操作。
+    33>项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF_Stub.proj”(41) (Build 个目标)。
+    41>StartMessage:
+         Doing build of Library SPOT_Hardware_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    41>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    33>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    33>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Hardware\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\VirtualKey\dotNetMF.proj”(42) (Build 个目标)。
+    42>StartMessage:
+         Doing build of Library virtualkey_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    42>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\VirtualKey\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Crypto\stubs\dotNetMF.proj”(43) (Build 个目标)。
+    43>StartMessage:
+         Doing build of Library Crypto_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    43>已完成生成项目“C:\PK\Crypto\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\GlobalLock\dotNetMF.proj”(44) (Build 个目标)。
+    44>StartMessage:
+         Doing build of Library GlobalLock_hal_Cortex - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    44>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\GlobalLock\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\TinyHal\dotNetMF.proj”(45) (Build 个目标)。
+    45>StartMessage:
+         Doing build of Library TinyHal_Cortex - rule is ArmBuildLib
+    45>项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\TinyHal\dotNetMF.proj”(45)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\TinyHal\dotNetMF_loader.proj”(46) (Build 个目标)。
+    46>StartMessage:
+         Doing build of Library TinyHal_loader_Cortex - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    46>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\TinyHal\dotNetMF_loader.proj”(Build 个目标)的操作。
+    45>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    45>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\CortexM3\TinyHal\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Stubs\Processor\stubs_PreStackInit\dotNetMF.proj”(47) (Build 个目标)。
+    47>StartMessage:
+         Doing build of Library cpu_prestackinit_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    47>已完成生成项目“C:\PK\DeviceCode\Drivers\Stubs\Processor\stubs_PreStackInit\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Bootstrap\dotNetMF.proj”(48) (Build 个目标)。
+    48>StartMessage:
+         Doing build of Library STM32_bootstrap - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    48>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Bootstrap\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\BatteryCharger\stubs\dotNetMF.proj”(50) (Build 个目标)。
+    50>StartMessage:
+         Doing build of Library batterycharger_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    50>已完成生成项目“C:\PK\DeviceCode\Drivers\BatteryCharger\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\BatteryMeasurement\stubs\dotNetMF.proj”(51) (Build 个目标)。
+    51>StartMessage:
+         Doing build of Library batterymeasurement_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    51>已完成生成项目“C:\PK\DeviceCode\Drivers\BatteryMeasurement\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_GPIO\dotNetMF.proj”(52) (Build 个目标)。
+    52>StartMessage:
+         Doing build of Library STM32_GPIO - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    52>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_GPIO\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Power\dotNetMF.proj”(53) (Build 个目标)。
+    53>StartMessage:
+         Doing build of Library STM32_Power - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    53>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Power\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Time\dotNetMF.proj”(54) (Build 个目标)。
+    54>StartMessage:
+         Doing build of Library STM32_time - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    54>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Time\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\Processor\stubs_watchdog\dotNetMF.proj”(55) (Build 个目标)。
+    55>StartMessage:
+         Doing build of Library cpu_watchdog_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    55>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\Processor\stubs_watchdog\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(56) (Build 个目标)。
+    56>StartMessage:
+         Doing build of Library system_initialization_hal - rule is ArmBuildLib
+    56>项目“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(56)正在节点 1 上生成“C:\PK\DeviceCode\Initialization\dotNetMF_loader.proj”(57) (Build 个目标)。
+    57>StartMessage:
+         Doing build of Library system_initialization_hal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    57>已完成生成项目“C:\PK\DeviceCode\Initialization\dotNetMF_loader.proj”(Build 个目标)的操作。
+    56>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    56>已完成生成项目“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Watchdog\stubs\dotNetMF.proj”(58) (Build 个目标)。
+    58>StartMessage:
+         Doing build of Library Watchdog_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    58>已完成生成项目“C:\PK\DeviceCode\Pal\Watchdog\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_IO\dotNetMF.proj”(59) (Build 个目标)。
+    59>StartMessage:
+         Doing build of Library SPOT_IO - rule is ArmBuildLib
+    59>项目“C:\PK\CLR\Libraries\SPOT_IO\dotNetMF.proj”(59)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_IO\dotNetMF_Stub.proj”(60) (Build 个目标)。
+    60>StartMessage:
+         Doing build of Library SPOT_IO_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    60>已完成生成项目“C:\PK\CLR\Libraries\SPOT_IO\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    59>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    59>已完成生成项目“C:\PK\CLR\Libraries\SPOT_IO\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(61) (Build 个目标)。
+    61>StartMessage:
+         Doing build of Library asyncproccall_pal - rule is ArmBuildLib
+    61>项目“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(61)正在节点 1 上生成“C:\PK\DeviceCode\PAL\AsyncProcCall\Stubs\dotNetMF.proj”(62) (默认目标)。
+    62>StartMessage:
+         Doing build of Library asyncproccall_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    62>已完成生成项目“C:\PK\DeviceCode\PAL\AsyncProcCall\Stubs\dotNetMF.proj”(默认目标)的操作。
+    61>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    61>已完成生成项目“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(63) (Build 个目标)。
+    63>StartMessage:
+         Doing build of Library blockstorage_pal - rule is ArmBuildLib
+    63>项目“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(63)正在节点 1 上生成“C:\PK\DeviceCode\PAL\BlockStorage\Stubs\dotNetMF.proj”(64) (默认目标)。
+    64>StartMessage:
+         Doing build of Library blockstorage_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    64>已完成生成项目“C:\PK\DeviceCode\PAL\BlockStorage\Stubs\dotNetMF.proj”(默认目标)的操作。
+    63>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    63>已完成生成项目“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(65) (Build 个目标)。
+    65>StartMessage:
+         Doing build of Library Buttons_pal - rule is ArmBuildLib
+    65>项目“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(65)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Buttons\Stubs\dotNetMF.proj”(66) (默认目标)。
+    66>StartMessage:
+         Doing build of Library Buttons_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    66>已完成生成项目“C:\PK\DeviceCode\PAL\Buttons\Stubs\dotNetMF.proj”(默认目标)的操作。
+    65>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    65>已完成生成项目“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Configuration\dotNetMF.proj”(67) (Build 个目标)。
+    67>StartMessage:
+         Doing build of Library config_pal - rule is ArmBuildLib
+    67>项目“C:\PK\DeviceCode\Pal\Configuration\dotNetMF.proj”(67)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Configuration\Stubs\dotNetMF.proj”(68) (默认目标)。
+    68>StartMessage:
+         Doing build of Library config_pal_Stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    68>已完成生成项目“C:\PK\DeviceCode\Pal\Configuration\Stubs\dotNetMF.proj”(默认目标)的操作。
+    67>项目“C:\PK\DeviceCode\Pal\Configuration\dotNetMF.proj”(67)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Configuration\dotNetMF_loader.proj”(69) (Build 个目标)。
+    69>StartMessage:
+         Doing build of Library config_pal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    69>已完成生成项目“C:\PK\DeviceCode\Pal\Configuration\dotNetMF_loader.proj”(Build 个目标)的操作。
+    67>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    67>已完成生成项目“C:\PK\DeviceCode\Pal\Configuration\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(70) (Build 个目标)。
+    70>StartMessage:
+         Doing build of Library heap_pal - rule is ArmBuildLib
+    70>项目“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(70)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Heap\Stubs\dotNetMF.proj”(71) (默认目标)。
+    71>StartMessage:
+         Doing build of Library heap_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    71>已完成生成项目“C:\PK\DeviceCode\PAL\Heap\Stubs\dotNetMF.proj”(默认目标)的操作。
+    70>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    70>已完成生成项目“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Piezo\stubs\dotNetMF.proj”(72) (Build 个目标)。
+    72>StartMessage:
+         Doing build of Library piezo_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    72>已完成生成项目“C:\PK\DeviceCode\PAL\Piezo\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap\stubs\dotNetMF.proj”(73) (Build 个目标)。
+    73>StartMessage:
+         Doing build of Library SimpleHeap_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    73>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap_config\stubs\dotNetMF.proj”(74) (Build 个目标)。
+    74>StartMessage:
+         Doing build of Library SimpleHeap_config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    74>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap_config\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(75) (Build 个目标)。
+    75>StartMessage:
+         Doing build of Library tinycrt_pal - rule is ArmBuildLib
+    75>项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(75)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\Stubs\dotNetMF.proj”(76) (默认目标)。
+    76>StartMessage:
+         Doing build of Library tinycrt_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    76>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\Stubs\dotNetMF.proj”(默认目标)的操作。
+    75>项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(75)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\dotNetMF_loader.proj”(77) (Build 个目标)。
+    77>StartMessage:
+         Doing build of Library tinycrt_pal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    77>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF_loader.proj”(Build 个目标)的操作。
+    75>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    75>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Support\CRC\dotNetMF.proj”(78) (Build 个目标)。
+    78>StartMessage:
+         Doing build of Library CRC - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    78>已完成生成项目“C:\PK\Support\CRC\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Support\WireProtocol\dotNetMF.proj”(79) (Build 个目标)。
+    79>StartMessage:
+         Doing build of Library WireProtocol - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    79>已完成生成项目“C:\PK\Support\WireProtocol\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\fs\stubs\dotNetMF.proj”(80) (Build 个目标)。
+    80>StartMessage:
+         Doing build of Library fs_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    80>已完成生成项目“C:\PK\DeviceCode\PAL\fs\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Ink\stubs\dotNetMF.proj”(81) (Build 个目标)。
+    81>StartMessage:
+         Doing build of Library Ink_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    81>已完成生成项目“C:\PK\DeviceCode\Pal\Ink\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Gesture\stubs\dotNetMF.proj”(82) (Build 个目标)。
+    82>StartMessage:
+         Doing build of Library Gesture_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    82>已完成生成项目“C:\PK\DeviceCode\Pal\Gesture\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\palevent\dotNetMF.proj”(83) (Build 个目标)。
+    83>StartMessage:
+         Doing build of Library palevent_pal - rule is ArmBuildLib
+    83>项目“C:\PK\DeviceCode\Pal\palevent\dotNetMF.proj”(83)正在节点 1 上生成“C:\PK\DeviceCode\Pal\palevent\Stubs\dotNetMF.proj”(84) (默认目标)。
+    84>StartMessage:
+         Doing build of Library palevent_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    84>已完成生成项目“C:\PK\DeviceCode\Pal\palevent\Stubs\dotNetMF.proj”(默认目标)的操作。
+    83>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    83>已完成生成项目“C:\PK\DeviceCode\Pal\palevent\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Time\dotNetMF.proj”(85) (Build 个目标)。
+    85>StartMessage:
+         Doing build of Library Time_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    85>已完成生成项目“C:\PK\DeviceCode\Pal\Time\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\FS\stubs\config\dotnetmf.proj”(86) (Build 个目标)。
+    86>StartMessage:
+         Doing build of Library FS_Config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    86>已完成生成项目“C:\PK\DeviceCode\PAL\FS\stubs\config\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\TimeService\stubs\dotNetMF.proj”(87) (Build 个目标)。
+    87>StartMessage:
+         Doing build of Library TimeService_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    87>已完成生成项目“C:\PK\DeviceCode\Pal\TimeService\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Graphics\dotNetMF.proj”(88) (Build 个目标)。
+    88>StartMessage:
+         Doing build of Library SPOT_Graphics - rule is ArmBuildLib
+    88>项目“C:\PK\CLR\Libraries\SPOT_Graphics\dotNetMF.proj”(88)正在节点 1 上生成“C:\PK\CLR\Libraries\SPOT_Graphics\dotNetMF_Stub.proj”(89) (Build 个目标)。
+    89>StartMessage:
+         Doing build of Library SPOT_Graphics_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    89>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Graphics\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    88>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    88>已完成生成项目“C:\PK\CLR\Libraries\SPOT_Graphics\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Graphics\dotNetMF.proj”(90) (Build 个目标)。
+    90>StartMessage:
+         Doing build of Library Graphics - rule is ArmBuildLib
+    90>项目“C:\PK\CLR\Graphics\dotNetMF.proj”(90)正在节点 1 上生成“C:\PK\CLR\Graphics\Jpeg\dotNetMF.proj”(91) (默认目标)。
+    91>StartMessage:
+         Doing build of Library Graphics_Jpeg - rule is ArmBuildLib
+    91>项目“C:\PK\CLR\Graphics\Jpeg\dotNetMF.proj”(91)正在节点 1 上生成“C:\PK\CLR\Graphics\Jpeg\dotNetMF_Stub.proj”(92) (Build 个目标)。
+    92>StartMessage:
+         Doing build of Library Graphics_Jpeg_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    92>已完成生成项目“C:\PK\CLR\Graphics\Jpeg\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    91>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    91>已完成生成项目“C:\PK\CLR\Graphics\Jpeg\dotNetMF.proj”(默认目标)的操作。
+    90>项目“C:\PK\CLR\Graphics\dotNetMF.proj”(90)正在节点 1 上生成“C:\PK\CLR\Graphics\Gif\dotNetMF.proj”(93) (默认目标)。
+    93>StartMessage:
+         Doing build of Library Graphics_Gif - rule is ArmBuildLib
+    93>项目“C:\PK\CLR\Graphics\Gif\dotNetMF.proj”(93)正在节点 1 上生成“C:\PK\CLR\Graphics\Gif\dotNetMF_Stub.proj”(94) (Build 个目标)。
+    94>StartMessage:
+         Doing build of Library Graphics_Gif_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    94>已完成生成项目“C:\PK\CLR\Graphics\Gif\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    93>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    93>已完成生成项目“C:\PK\CLR\Graphics\Gif\dotNetMF.proj”(默认目标)的操作。
+    90>项目“C:\PK\CLR\Graphics\dotNetMF.proj”(90)正在节点 1 上生成“C:\PK\CLR\Graphics\Bmp\dotNetMF.proj”(95) (默认目标)。
+    95>StartMessage:
+         Doing build of Library Graphics_Bmp - rule is ArmBuildLib
+    95>项目“C:\PK\CLR\Graphics\Bmp\dotNetMF.proj”(95)正在节点 1 上生成“C:\PK\CLR\Graphics\Bmp\dotNetMF_Stub.proj”(96) (Build 个目标)。
+    96>StartMessage:
+         Doing build of Library Graphics_Bmp_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    96>已完成生成项目“C:\PK\CLR\Graphics\Bmp\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    95>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    95>已完成生成项目“C:\PK\CLR\Graphics\Bmp\dotNetMF.proj”(默认目标)的操作。
+    90>项目“C:\PK\CLR\Graphics\dotNetMF.proj”(90)正在节点 1 上生成“C:\PK\CLR\Graphics\dotNetMF_Stub.proj”(97) (Build 个目标)。
+    97>StartMessage:
+         Doing build of Library Graphics_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    97>已完成生成项目“C:\PK\CLR\Graphics\dotNetMF_Stub.proj”(Build 个目标)的操作。
+    90>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    90>已完成生成项目“C:\PK\CLR\Graphics\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Graphics\dotNetMF.proj”(98) (Build 个目标)。
+    98>StartMessage:
+         Doing build of Library graphics_pal - rule is ArmBuildLib
+    98>项目“C:\PK\DeviceCode\PAL\Graphics\dotNetMF.proj”(98)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Graphics\Stubs\dotNetMF.proj”(99) (默认目标)。
+    99>StartMessage:
+         Doing build of Library graphics_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    99>已完成生成项目“C:\PK\DeviceCode\PAL\Graphics\Stubs\dotNetMF.proj”(默认目标)的操作。
+    98>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    98>已完成生成项目“C:\PK\DeviceCode\PAL\Graphics\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Backlight\stubs\dotNetMF.proj”(100) (Build 个目标)。
+   100>StartMessage:
+         Doing build of Library backlight_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   100>已完成生成项目“C:\PK\DeviceCode\Drivers\Backlight\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\dotnetmf.proj”(101) (Build 个目标)。
+   101>StartMessage:
+         Doing build of Library LCDController_HAL_STM32F103ZET - rule is ArmBuildLib
+       DelBuildLib:
+         del /q  C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\LCDController_HAL_STM32F103ZET.lib
+         del /q  C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\LCDController_HAL_STM32F103ZET.lib.manifest
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\DeviceCode\LCD -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc -IC:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\stm32f10x -IC:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.obj -c C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.cpp
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_THUMB2  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_STM32F103ZET  -DTARGETLOCATION_FLASH  -DLITTLE_ENDIAN  -DPLATFORM_EMULATED_FLOATINGPOINT=0 -DPLATFORM_NO_CLR_TRACE=1 -DTINYCLR_NO_APPDOMAINS=1 -DTINYCLR_NO_IL_INLINE=1   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\STM32F103ZET\DeviceCode\LCD -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\STM32F103ZET -IC:\PK\devicecode\Targets\Native\STM32 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\STM32\STM32F103ZET -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc -IC:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\stm32f10x -IC:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx    -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.obj -c C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.cpp  
+         "C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.cpp", line 1763: Warning:  #940-D: missing return statement at end of non-void function "LCD_Controller_Enable"
+           }
+           ^
+         "C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.cpp", line 1832: Warning:  #177-D: variable "size" was declared but never referenced
+               u32 size = 0;	   
+                   ^
+         C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\ILI93xx.cpp: 2 warnings, 0 errors
+       ArmBuildLib:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\LCDController_HAL_STM32F103ZET.lib ILI93xx.obj     
+   101>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\LCD\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_cache\dotNetMF.proj”(102) (Build 个目标)。
+   102>StartMessage:
+         Doing build of Library cpu_cache_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   102>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_cache\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_lcd\dotNetMF.proj”(103) (Build 个目标)。
+   103>StartMessage:
+         Doing build of Library cpu_LCD_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   103>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_lcd\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Flash\dotNetMF.proj”(104) (Build 个目标)。
+   104>StartMessage:
+         Doing build of Library STM32_Flash - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   104>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Flash\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\W25Q64\dotNetMF.proj”(105) (Build 个目标)。
+   105>StartMessage:
+         Doing build of Library W25Q64_Flash - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   105>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\W25Q64\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\STM32\dotNetMF.proj”(106) (Build 个目标)。
+   106>StartMessage:
+         Doing build of Library STM32_blconfig_STM32F103ZET - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   106>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\STM32\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\W25Q64\dotNetMF.proj”(107) (Build 个目标)。
+   107>StartMessage:
+         Doing build of Library W25Q64_blconfig_STM32F103ZET - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   107>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\W25Q64\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\addDevices\dotNetMF.proj”(108) (Build 个目标)。
+   108>StartMessage:
+         Doing build of Library BlockStorage_AddDevices_STM32F103ZET - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   108>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\Blockstorage\addDevices\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\Init\dotNetMF.proj”(109) (Build 个目标)。
+   109>StartMessage:
+         Doing build of Library IO_Init_STM32F103ZET - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   109>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\Init\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_SPI\dotNetMF.proj”(110) (Build 个目标)。
+   110>StartMessage:
+         Doing build of Library STM32_SPI - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   110>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_SPI\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_I2C\dotNetMF.proj”(111) (Build 个目标)。
+   111>StartMessage:
+         Doing build of Library STM32_I2C - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   111>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_I2C\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_USART\dotNetMF.proj”(112) (Build 个目标)。
+   112>StartMessage:
+         Doing build of Library STM32_USART - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   112>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_USART\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_USB\dotNetMF.proj”(113) (Build 个目标)。
+   113>StartMessage:
+         Doing build of Library STM32_USB - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   113>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_USB\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_IntC\dotNetMF.proj”(114) (Build 个目标)。
+   114>StartMessage:
+         Doing build of Library STM32_INTC - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   114>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_IntC\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_PWM\dotNetMF.proj”(115) (Build 个目标)。
+   115>StartMessage:
+         Doing build of Library STM32_PWM - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   115>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_PWM\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Analog\dotNetMF.proj”(116) (Build 个目标)。
+   116>StartMessage:
+         Doing build of Library STM32_Analog - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   116>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_Analog\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_DA\dotNetMF.proj”(117) (Build 个目标)。
+   117>StartMessage:
+         Doing build of Library STM32_DA - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   117>已完成生成项目“C:\PK\DeviceCode\Targets\Native\STM32\DeviceCode\STM32_DA\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118) (Build 个目标)。
+   118>StartMessage:
+         Doing build of Library COM_pal - rule is ArmBuildLib
+   118>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(119) (默认目标)。
+   119>StartMessage:
+         Doing build of Library i2c_pal - rule is ArmBuildLib
+   119>项目“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(119)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\i2c\Stubs\dotNetMF.proj”(120) (默认目标)。
+   120>StartMessage:
+         Doing build of Library i2c_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   120>已完成生成项目“C:\PK\DeviceCode\PAL\COM\i2c\Stubs\dotNetMF.proj”(默认目标)的操作。
+   119>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   119>已完成生成项目“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(默认目标)的操作。
+   118>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\sockets\dotNetMF.proj”(121) (默认目标)。
+   121>StartMessage:
+         Doing build of Library sockets_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   121>已完成生成项目“C:\PK\DeviceCode\PAL\COM\sockets\dotNetMF.proj”(默认目标)的操作。
+   118>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(122) (默认目标)。
+   122>StartMessage:
+         Doing build of Library usart_pal - rule is ArmBuildLib
+   122>项目“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(122)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usart\Stubs\dotNetMF.proj”(123) (默认目标)。
+   123>StartMessage:
+         Doing build of Library usart_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   123>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usart\Stubs\dotNetMF.proj”(默认目标)的操作。
+   122>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   122>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(默认目标)的操作。
+   118>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usb\dotNetMF.proj”(124) (默认目标)。
+   124>StartMessage:
+         Doing build of Library usb_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   124>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usb\dotNetMF.proj”(默认目标)的操作。
+   118>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(118)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\stubs\dotNetMF.proj”(125) (默认目标)。
+   125>StartMessage:
+         Doing build of Library COM_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   125>已完成生成项目“C:\PK\DeviceCode\PAL\COM\stubs\dotNetMF.proj”(默认目标)的操作。
+   118>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   118>已完成生成项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\Config\dotnetmf.proj”(126) (Build 个目标)。
+   126>StartMessage:
+         Doing build of Library DebuggerPort_SSL_Config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   126>已完成生成项目“C:\PK\DeviceCode\PAL\COM\Config\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(127) (Build 个目标)。
+   127>StartMessage:
+         Doing build of Library events_pal - rule is ArmBuildLib
+   127>项目“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(127)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Events\Stubs\dotNetMF.proj”(128) (默认目标)。
+   128>StartMessage:
+         Doing build of Library events_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   128>已完成生成项目“C:\PK\DeviceCode\PAL\Events\Stubs\dotNetMF.proj”(默认目标)的操作。
+   127>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   127>已完成生成项目“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Debugger\dotNetMF.proj”(129) (Build 个目标)。
+   129>StartMessage:
+         Doing build of Library Debugger - rule is ArmBuildLib
+   129>项目“C:\PK\CLR\Debugger\dotNetMF.proj”(129)正在节点 1 上生成“C:\PK\CLR\Debugger\dotNetMF_extended.proj”(130) (Build 个目标)。
+   130>StartMessage:
+         Doing build of Library Debugger_extended - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   130>已完成生成项目“C:\PK\CLR\Debugger\dotNetMF_extended.proj”(Build 个目标)的操作。
+   129>项目“C:\PK\CLR\Debugger\dotNetMF.proj”(129)正在节点 1 上生成“C:\PK\CLR\Debugger\dotNetMF_full.proj”(131) (Build 个目标)。
+   131>StartMessage:
+         Doing build of Library Debugger_full - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   131>已完成生成项目“C:\PK\CLR\Debugger\dotNetMF_full.proj”(Build 个目标)的操作。
+   129>项目“C:\PK\CLR\Debugger\dotNetMF.proj”(129)正在节点 1 上生成“C:\PK\CLR\Debugger\dotNetMF_minimal.proj”(132) (Build 个目标)。
+   132>StartMessage:
+         Doing build of Library Debugger_minimal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   132>已完成生成项目“C:\PK\CLR\Debugger\dotNetMF_minimal.proj”(Build 个目标)的操作。
+   129>项目“C:\PK\CLR\Debugger\dotNetMF.proj”(129)正在节点 1 上生成“C:\PK\CLR\Debugger\dotNetMF_Stub.proj”(133) (Build 个目标)。
+   133>StartMessage:
+         Doing build of Library Debugger_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   133>已完成生成项目“C:\PK\CLR\Debugger\dotNetMF_Stub.proj”(Build 个目标)的操作。
+   129>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   129>已完成生成项目“C:\PK\CLR\Debugger\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Diagnostics\dotNetMF.proj”(134) (Build 个目标)。
+   134>StartMessage:
+         Doing build of Library Diagnostics - rule is ArmBuildLib
+   134>项目“C:\PK\CLR\Diagnostics\dotNetMF.proj”(134)正在节点 1 上生成“C:\PK\CLR\Diagnostics\dotNetMF_stub.proj”(135) (Build 个目标)。
+   135>StartMessage:
+         Doing build of Library Diagnostics_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   135>已完成生成项目“C:\PK\CLR\Diagnostics\dotNetMF_stub.proj”(Build 个目标)的操作。
+   134>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   134>已完成生成项目“C:\PK\CLR\Diagnostics\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\Sockets\stubs\dotNetMF.proj”(136) (Build 个目标)。
+   136>StartMessage:
+         Doing build of Library sockets_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   136>已完成生成项目“C:\PK\DeviceCode\PAL\COM\Sockets\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\CLR\Messaging\dotNetMF.proj”(137) (Build 个目标)。
+   137>StartMessage:
+         Doing build of Library Messaging - rule is ArmBuildLib
+   137>项目“C:\PK\CLR\Messaging\dotNetMF.proj”(137)正在节点 1 上生成“C:\PK\CLR\Messaging\dotNetMF_Stub.proj”(138) (Build 个目标)。
+   138>StartMessage:
+         Doing build of Library Messaging_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   138>已完成生成项目“C:\PK\CLR\Messaging\dotNetMF_Stub.proj”(Build 个目标)的操作。
+   137>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   137>已完成生成项目“C:\PK\CLR\Messaging\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Solutions\STM32F103ZET\DeviceCode\USB_Config\dotNetMF.proj”(139) (Build 个目标)。
+   139>StartMessage:
+         Doing build of Library usb_pal_config_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   139>已完成生成项目“C:\PK\Solutions\STM32F103ZET\DeviceCode\USB_Config\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\MFUpdate\stubs\dotnetMF.proj”(140) (Build 个目标)。
+   140>StartMessage:
+         Doing build of Library MFUpdate_PAL_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   140>已完成生成项目“C:\PK\DeviceCode\PAL\MFUpdate\stubs\dotnetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\Sockets\ssl\stubs\dotNetMF.proj”(141) (Build 个目标)。
+   141>StartMessage:
+         Doing build of Library ssl_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+   141>已完成生成项目“C:\PK\DeviceCode\PAL\COM\Sockets\ssl\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Subset_of_CorLib\SpotCorLib.csproj”(142) (Build 个目标)。
+   142>StartBuild:
+         Building...C:\PK\Framework\Subset_of_CorLib\SpotCorLib.csproj;
+       CoreResGen:
+         所有输出均为最新。
+       TinyResGen:
+         GenerateResource.NothingOutOfDate
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#mscorlib#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#mscorlib#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\mscorlib_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         SpotCorLib -> C:\PK\BuildOutput\public\debug\Client\dll\mscorlib.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   142>已完成生成项目“C:\PK\Framework\Subset_of_CorLib\SpotCorLib.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native\Core_Native.csproj”(143) (Build 个目标)。
+   143>StartBuild:
+         Building...C:\PK\Framework\Core\Native\Core_Native.csproj;
+       CoreResGen:
+         所有输出均为最新。
+       TinyResGen:
+         GenerateResource.NothingOutOfDate
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Native#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Native#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Native_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Native.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   143>已完成生成项目“C:\PK\Framework\Core\Native\Core_Native.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native_hardware\Core_Native_Hardware.csproj”(144) (Build 个目标)。
+   144>StartBuild:
+         Building...C:\PK\Framework\Core\Native_hardware\Core_Native_Hardware.csproj;
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Hardware#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Hardware#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native_Hardware -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   144>已完成生成项目“C:\PK\Framework\Core\Native_hardware\Core_Native_Hardware.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native_Hardware\Native_UART\Core_Native_Hardware_UART.csproj”(145) (Build 个目标)。
+   145>StartBuild:
+         Building...C:\PK\Framework\Core\Native_Hardware\Native_UART\Core_Native_Hardware_UART.csproj;
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Hardware.SerialPort#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Hardware.SerialPort#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.SerialPort_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native_Hardware_UART -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.SerialPort.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   145>已完成生成项目“C:\PK\Framework\Core\Native_Hardware\Native_UART\Core_Native_Hardware_UART.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native_Hardware\Native_USB\Core_Native_Hardware_USB.csproj”(146) (Build 个目标)。
+   146>StartBuild:
+         Building...C:\PK\Framework\Core\Native_Hardware\Native_USB\Core_Native_Hardware_USB.csproj;
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Hardware.Usb#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Hardware.Usb#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.Usb_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native_Hardware_USB -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.Usb.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   146>已完成生成项目“C:\PK\Framework\Core\Native_Hardware\Native_USB\Core_Native_Hardware_USB.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj”(147) (Build 个目标)。
+   147>StartBuild:
+         Building...C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj;
+   147>C:\PK\tools\Targets\Microsoft.SPOT.Build.Targets(664,5): warning MSB3088: 未能读取状态文件“TinyCLR_DebugReferences.cache”。对象必须实现 IConvertible。 [C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj]
+   147>C:\PK\tools\Targets\Microsoft.SPOT.Build.Targets(726,5): warning MSB3088: 未能读取状态文件“TinyCLR_DebugReferences.cache”。对象必须实现 IConvertible。 [C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj]
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Graphics#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Graphics#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Graphics_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native_Graphics -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Graphics.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   147>已完成生成项目“C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\TinyCore\TinyCore.csproj”(148) (Build 个目标)。
+   148>StartBuild:
+         Building...C:\PK\Framework\TinyCore\TinyCore.csproj;
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.TinyCore#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.0#;__PRODUCTVERSION__=#4.2.0.0#;__PRODUCTVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYFILEVERSION__=#4.2.0.0#;__FILEVERSION_CSV__=4, 2, 0, 0;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.TinyCore#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.TinyCore_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         TinyCore -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.TinyCore.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   148>已完成生成项目“C:\PK\Framework\TinyCore\TinyCore.csproj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(2)正在节点 1 上生成“C:\PK\Framework\Core\Native_Hardware\Native_PWM\Core_Native_Hardware_PWM.csproj”(149) (Build 个目标)。
+   149>StartBuild:
+         Building...C:\PK\Framework\Core\Native_Hardware\Native_PWM\Core_Native_Hardware_PWM.csproj;
+       DoAddCommonAssemblyInfo:
+         cscript //Nologo C:\PK\tools\scripts\Preprocess.js /TemplateFile:C:\PK\tools\AssemblyInfo.cs.template /Properties:"__ASSEMBLYTITLE__=#Microsoft.SPOT.Hardware.PWM#;__ASSEMBLYCOMPANY__=#Microsoft Corporation#;__ASSEMBLYCOPYRIGHT__=#Copyright (C) Microsoft Corporation.  All rights reserved.#;__ASSEMBLYDESCRIPTION__=##;__ASSEMBLYVERSION__=#4.2.0.1#;__PRODUCTVERSION__=#4.2.0.1#;__PRODUCTVERSION_CSV__=4, 2, 0, 1;__ASSEMBLYFILEVERSION__=#4.2.0.1#;__FILEVERSION_CSV__=4, 2, 0, 1;__ASSEMBLYCONFIGURATION__=#debug#;__ASSEMBLYPRODUCT__=#Microsoft .NET Micro Framework#;__ASSEMBLYTRADEMARK__=#.NET is a trademark of Microsoft Corporation.#;__ASSEMBLYINTERNALNAME__=#Microsoft.SPOT.Hardware.PWM#" /OutputFile:C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.PWM_assemblyinfo.txt
+       CoreCompile:
+       正在跳过目标“CoreCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       CopyFilesToOutputDirectory:
+         Core_Native_Hardware_PWM -> C:\PK\BuildOutput\public\debug\Client\dll\Microsoft.SPOT.Hardware.PWM.dll
+       MetaDataProcessorCompile:
+       正在跳过目标“MetaDataProcessorCompile”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorCompileBE:
+       正在跳过目标“MetaDataProcessorCompileBE”，因为所有输出文件相对于输入文件而言都是最新的。
+       MetaDataProcessorDump:
+       正在跳过目标“MetaDataProcessorDump”，因为所有输出文件相对于输入文件而言都是最新的。
+   149>已完成生成项目“C:\PK\Framework\Core\Native_Hardware\Native_PWM\Core_Native_Hardware_PWM.csproj”(Build 个目标)的操作。
+     2>ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       MetaDataProcessorDat:
+         C:\PK\BuildOutput\public\Release\server\dll\MetaDataProcessor.exe -create_database C:\Users\Administrator\AppData\Local\Temp\tmpE183.tmp C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.dat 
+       TinyClrDat:
+         ***************************************************************************************************
+         Target: TinyClrDat with outputs C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\tinyclr_dat.obj
+         Building Tinyclr.dat from the features specified in the tinyclr.proj file
+          "C:\Keil\ARM\bin40\armasm.exe" -IC:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin  --diag_suppress A1658 --PD "COMPILE_THUMB2 SETS \"1\"" --PD "TargetLocation SETS \"FLASH\"" --PD "TargetType         SETS \"debug\"" --PD "TargetModel        SETS \"STM32F103ZET\"" --PD "TargetPlatformName SETS \"PLATFORM_ARM_STM32F103ZET\"" --PD "CompilerVersion    SETS \"MDK\"" --PD "TargetPlatformProcessor SETS \"PLATFORM_ARM_STM32\"" --PD "HAL_REDUCESIZE SETS \"0\""   --thumb --apcs=interwork   --fpu softvfp  --cpu Cortex-M3 --littleend  --PD "BUILD_RTM SETS \"0\"" -g  -g --keep  --LIST C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\tinyclr_dat.txt --xref -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\tinyclr_dat.obj RVD_S\tinyclr_dat.s
+         ========== Database file content:
+         C:\PK\BuildOutput\public\debug\Server\dll\MetaDataProcessor.exe -dump_dat C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.dat
+         Assembly: mscorlib (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Native (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Hardware (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Hardware.SerialPort (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Hardware.Usb (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Graphics (4.2.0.0)
+         
+         Assembly 1: mscorlib (4.2.0.0), size: 40960
+         Assembly 2: Microsoft.SPOT.Native (4.2.0.0), size: 7444
+         Assembly 3: Microsoft.SPOT.Hardware (4.2.0.0), size: 14220
+         Assembly 4: Microsoft.SPOT.Hardware.SerialPort (4.2.0.0), size: 3608
+         Assembly 5: Microsoft.SPOT.Hardware.Usb (4.2.0.0), size: 3740
+         Assembly 6: Microsoft.SPOT.Graphics (4.2.0.0), size: 2268
+         Assembly 7: Microsoft.SPOT.TinyCore (4.2.0.0), size: 61696
+         Assembly: Microsoft.SPOT.TinyCore (4.2.0.0)
+         
+         Assembly: Microsoft.SPOT.Hardware.PWM (4.2.0.1)
+         
+         Assembly 8: Microsoft.SPOT.Hardware.PWM (4.2.0.1), size: 1940
+         ========== End of Database file content
+         ***************************************************************************************************
+         copy /BVY C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.dat C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.dat.fromlastbuildrun
+         已复制         1 个文件。
+         del  /Q /F C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.dat
+       BuildScatterfile:
+       正在跳过目标“BuildScatterfile”，因为所有输出文件相对于输入文件而言都是最新的。
+       BuildAXF:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\tmp_tinyclr.lib Core.lib Hardware.lib IOPort.lib RPC_stub.lib CorLib.lib SPOT.lib SPOT_Hardware.lib CLRStartup.lib SPOT_IO.lib CRC.lib WireProtocol.lib SPOT_Graphics.lib Graphics.lib Graphics_Gif.lib Graphics_Jpeg.lib Graphics_Bmp.lib Debugger.lib Debugger_full.lib Diagnostics.lib HeapPersistence.lib SPOT_Messaging_stub.lib Messaging.lib I2C.lib InterruptHandler.lib SPOT_Serialization.lib Serialization.lib SPOT_Hardware_SerialPort.lib SPOT_Hardware_PWM.lib SPOT_Hardware_Usb.lib
+         "C:\Keil\ARM\bin40\armlink.exe"  --keep *(.init_array) --no_keep_init_arrays --feedback C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr_STM32F103ZET_FLASH_debug_MDK.feedback  --debug --remove --unmangled --info sizes,totals,veneers,unused,libraries --map  --xref --symbols --callgraph --userlibpath C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib --userlibpath C:\PK\BuildOutput\THUMB2\MDK\le\ANY_MEDIA\debug\lib --libpath C:\Keil\ARM\RV31\LIB  --entry EntryPoint  --symdefs C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.symdefs --list C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.map --output C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.axf --scatter C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr_scatterfile.txt C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\tinyclr_dat.obj C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\allocator.obj C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\obj\Solutions\STM32F103ZET\TinyCLR\tinyclr.obj C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\InteropAssembliesTable.lib LargeBuffer_hal_stubs.lib virtualkey_hal_stubs.lib Crypto_stub.lib GlobalLock_hal_Cortex.lib TinyHal_Cortex.lib cpu_prestackinit_stubs.lib STM32_bootstrap.lib batterycharger_hal_stubs.lib batterymeasurement_hal_stubs.lib STM32_GPIO.lib STM32_Power.lib STM32_time.lib cpu_watchdog_stubs.lib system_initialization_hal.lib Watchdog_pal_stubs.lib asyncproccall_pal.lib blockstorage_pal.lib Buttons_pal.lib config_pal.lib heap_pal.lib piezo_pal_stubs.lib SimpleHeap_stubs.lib SimpleHeap_config_stubs.lib tinycrt_pal.lib fs_pal_stubs.lib Ink_pal_stubs.lib Gesture_pal_stubs.lib palevent_pal.lib Time_pal.lib FS_Config_stubs.lib TimeService_pal_stubs.lib graphics_pal.lib backlight_hal_stubs.lib LCDController_HAL_STM32F103ZET.lib cpu_cache_stubs.lib cpu_LCD_stubs.lib STM32_Flash.lib W25Q64_Flash.lib STM32_blconfig_STM32F103ZET.lib W25Q64_blconfig_STM32F103ZET.lib BlockStorage_AddDevices_STM32F103ZET.lib IO_Init_STM32F103ZET.lib STM32_SPI.lib STM32_I2C.lib STM32_USART.lib STM32_USB.lib STM32_IntC.lib STM32_PWM.lib STM32_Analog.lib STM32_DA.lib COM_pal.lib DebuggerPort_SSL_config_stubs.lib events_pal.lib sockets_pal_stubs.lib usart_pal.lib usb_pal.lib i2c_pal.lib usb_pal_config_stub.lib MFUpdate_PAL_stub.lib ssl_pal_stubs.lib C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\tmp_tinyclr.lib
+         "C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr_scatterfile.txt", line 13 (column 5): Warning: L6312W: Empty Execution region description for region ER_RAM_RO
+         "C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr_scatterfile.txt", line 32 (column 12): Warning: L6329W: Pattern *(SectionForCustomHeapEnd) only matches removed unused sections.
+         Finished: 0 information, 2 warning and 0 error messages.
+         del /q C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\lib\tmp_tinyclr.lib
+         "C:\Keil\ARM\bin40\fromelf.exe"  --text -c -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.axfdump C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.axf
+         "C:\Keil\ARM\bin40\fromelf.exe"  --bin  -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin     C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.axf
+         "C:\Keil\ARM\bin40\fromelf.exe"  --m32  -o C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.hex     C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.axf
+         C:\PK\BuildOutput\public\debug\Server\dll\BuildHelper -hashBuild C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_FLASH C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.symdefs
+         copy /Y C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr_STM32F103ZET_FLASH_debug_MDK.feedback C:\PK\tools\make\Feedback\STM32F103ZET_MDK.feedback
+         已复制         1 个文件。
+       FindBinFilesForSig:
+         del /q C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.hex\*.sig
+         file selected C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_CONFIG;C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_FLASH
+         file selected 
+         file selected C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_CONFIG;C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_FLASH
+       BuildSigFiles:
+         Create Signature files for C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_CONFIG;C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_FLASH
+         C:\PK\BuildOutput\public\debug\Server\dll\MetaDataProcessor.exe -sign_file C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_CONFIG C:\PK\tools\bin\tinybooter_private_key.bin C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.hex\ER_CONFIG.sig
+         C:\PK\BuildOutput\public\debug\Server\dll\MetaDataProcessor.exe -sign_file C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.bin\ER_FLASH C:\PK\tools\bin\tinybooter_private_key.bin C:\PK\BuildOutput\THUMB2\MDK\le\FLASH\debug\STM32F103ZET\bin\tinyclr.hex\ER_FLASH.sig
+     2>已完成生成项目“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(Build 个目标)的操作。
+     1>已完成生成项目“C:\PK\Solutions\STM32F103ZET\dotnetmf.proj”(build 个目标)的操作。
+
+已成功生成。
+
+         C:\PK\Framework\Features\Hardware.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\SerialPort.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\SerialPort.featureproj(7,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\serial_port.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (44,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\Usb.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\Usb.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\Usb.featureproj(7,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\USB_Port.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (46,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\I2C.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\SPI.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\TinyCore.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\TinyCore.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\PWM.featureproj(5,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\core.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (39,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\PWM.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Hardware.featureproj”。可能已在“C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj (40,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+         C:\PK\Framework\Features\DataStorage.featureproj(6,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\BlockStorage_PAL.libcatproj”。可能已在“C:\PK\Framework\Features\BlockStorage.featureproj (5,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。[C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj]
+         C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj(55,3): warning MSB4011: 无法再次导入“C:\PK\Framework\Features\Graphics.featureproj”。可能已在“C:\PK\Framework\Features\TinyCore.featureproj (7,3)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。
+
+
+       “C:\PK\Solutions\STM32F103ZET\dotnetmf.proj”(build 目标) (1) ->
+       “C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(Build 目标) (2) ->
+       “C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj”(Build 目标) (147) ->
+       (ResolveRuntimeDependenciesLE 目标) -> 
+         C:\PK\tools\Targets\Microsoft.SPOT.Build.Targets(664,5): warning MSB3088: 未能读取状态文件“TinyCLR_DebugReferences.cache”。对象必须实现 IConvertible。 [C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj]
+
+
+       “C:\PK\Solutions\STM32F103ZET\dotnetmf.proj”(build 目标) (1) ->
+       “C:\PK\Solutions\STM32F103ZET\TinyCLR\TinyCLR.proj”(Build 目标) (2) ->
+       “C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj”(Build 目标) (147) ->
+       (ResolveRuntimeDependenciesBE 目标) -> 
+         C:\PK\tools\Targets\Microsoft.SPOT.Build.Targets(726,5): warning MSB3088: 未能读取状态文件“TinyCLR_DebugReferences.cache”。对象必须实现 IConvertible。 [C:\PK\Framework\Core\Native_Graphics\Core_Native_Graphics.csproj]
+
+    16 个警告
+    0 个错误
+
+已用时间 00:00:20.35

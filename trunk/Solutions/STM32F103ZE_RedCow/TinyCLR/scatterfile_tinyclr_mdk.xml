@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<ScatterFile xmlns="http://schemas.microsoft.com/netmf/ScatterfileSchema.xsd">
+
+    <Set Name="Valid" Value="false"/>
+
+    <!-- ################################################################################ -->
+    <Set Name="RAM_BaseAddress"       		Value="0x20000000"/>
+    
+    <!-- All the Heap,Custom_Heap and Stack are in the internal 64K RAM of STM32F103ZE -->
+    <!--
+		<Set Name="Heap_Begin"        Value="0x20008000"/>
+    <Set Name="Heap_End"          Value="0x2000DFFC"/>
+    <Set Name="Custom_Heap_Begin" Value="+0"/>
+    <Set Name="Custom_Heap_End"   Value="0x2000EFFC"/>
+    <Set Name="Stack_Bottom"      Value="+0"/>
+    <Set Name="Stack_Top"         Value="0x2000FFFC"/>
+		-->
+		
+		<!-- Heap and Custom_Heap are in the external RAM,and Stack is in the internal 64K RAM of STM32F103ZE -->
+		<!-- The external RAM is IS61LV25616 which is 256K x 16,equal with 4194304 bit,512K byte,and the range should
+		     be from 0x68000000 to 0x68080000. But in my test,if the heap address is more than 0x68040000,it would 
+		     run wrong. I don't know why. Is IS61LV25616 256K byte actual?-->
+		<!--
+		<Set Name="Heap_Begin"          Value="0x68000000"/>
+		<Set Name="Heap_End"            Value="0x6803DFFC"/>
+		<Set Name="Custom_Heap_Begin"   Value="+0"/>
+		<Set Name="Custom_Heap_End"     Value="0x6803FFFC"/>
+		<Set Name="Stack_Bottom"        Value="0x20008000"/>
+		<Set Name="Stack_Top"           Value="0x2000FFFC"/>
+		-->
+		
+		<!-- Heap , Custom_Heap and stack are in the external RAM -->
+		<!-- The external RAM is IS61LV25616 which is 256K x 16,equal with 4194304 bit,512K byte,and the range should
+		     be from 0x68000000 to 0x68080000. But in my test,if the address is more than 0x68040000,it would 
+		     run wrong. I don't know why. Is IS61LV25616 256K byte actual?-->
+		<Set Name="Heap_Begin"          Value="0x68000000"/>
+		<Set Name="Heap_End"            Value="0x6802AFFC"/>
+		<Set Name="Custom_Heap_Begin"   Value="+0"/>
+		<Set Name="Custom_Heap_End"     Value="0x6802FFFC"/>
+		<Set Name="Stack_Bottom"        Value="+0"/>
+		<Set Name="Stack_Top"           Value="0x6803FFFC"/>
+
+
+		<!-- I don't know how the ProfileBuffer use,so I comment then,and it also succeed in compiling -->
+		<!--
+    <IfDefined Name="PROFILE_BUILD">
+        <Set Name="ProfileBuffer_Begin" Value="0x20009000"/>
+        <Set Name="ProfileBuffer_End"   Value="0x2000EFFC"/>
+    </IfDefined>
+    -->
+
+    <If Name="TARGETLOCATION" In="FLASH">
+        <!-- the TINYCLR and Hal Code should lie in one partition and the other data/LOG/DEPLOYMENT session should sit in another partition, -->
+        <!-- in order to optimized for flash operations while erasing flash that it is still able to implement code from other flash partition -->
+        <Set Name="Config_BaseAddress"  Value="0x0807A000"/>    
+        <Set Name="Config_Size"         Value="0x00005000"/>
+        <Set Name="Code_BaseAddress"    Value="0x08000000"/>
+        <Set Name="Deploy_BaseAddress"  Value="0x08073000" />
+        <Set Name="Code_Size"           Value="%Deploy_BaseAddress - Code_BaseAddress%" />
+        <Set Name="Valid"               Value="true"/>
+
+        <If Name="TARGETTYPE" In="RELEASE DEBUG">
+          <Set Name="Data_BaseAddress" Value="0x0804F000" />
+          <Set Name="Code_Size" Value="%Data_BaseAddress - Code_BaseAddress%" />
+          <Set Name="Data_Size" Value="%Deploy_BaseAddress - Data_BaseAddress%" />
+        </If>
+    </If>
+
+    <If Name="TARGETLOCATION" In="RAM">
+				<!--
+        <Set Name="Heap_Begin"        Value="0x08300000"/>
+        <Set Name="Heap_End"          Value="0x085FFFF8"/>
+        <Set Name="Custom_Heap_Begin" Value="0x08600000"/>
+
+        <Set Name="Code_BaseAddress"  Value="0x08020000"/>
+        <Set Name="Code_Size"         Value="0x002D0000"/>
+        -->
+        
+        <!-- RAM with FLASH config is not needed -->
+        
+        <!-- The internal RAM is too small to deploy the tinyClr,so I set valid as false here -->
+        <Set Name="Valid"             Value="false"/>
+
+    </If>
+
+     
+    <!-- ################################################################################ -->
+
+    <If Name="Valid" Value="false">
+        <Error Message="Configuration not recognized"/>
+    </If>
+
+    <!-- we start at 0x10080000 since PortBooter lives at 0x10000000 -->
+
+    <LoadRegion Name="LR_%TARGETLOCATION%" Base="%Code_BaseAddress%" Options="ABSOLUTE" Size="%Code_Size%">
+
+        <!-- we have arbitrarily assigned 0x00080000 offset in FLASH for the CLR code, and size of 0x00080000 -->
+
+        <ExecRegion Name="ER_%TARGETLOCATION%" Base="%Code_BaseAddress%" Options="FIXED" Size="">
+						
+						<FileMapping Name="VectorsTrampolines.obj" Options="(+RO, +FIRST)" /> <!-- for vector handlers to be far from the vectors -->
+						
+            <FileMapping Name="FirstEntry.obj"    Options="(+RO)" /> <!-- the entry pointer section goes into this region -->
+
+            <FileMapping Name="*" Options="(SectionForBootstrapOperations)" />
+
+            <FileMapping Name="*" Options="(+RO-CODE)" />
+
+            <FileMapping Name="*" Options="(+RO-DATA)" />
+
+            <IfNotDefined Name="Data_BaseAddress">
+
+                <FileMapping Name="tinyclr_dat.obj" Options="(+RO, +LAST)" />
+
+            </IfNotDefined>
+
+        </ExecRegion>
+
+        <!-- skip vector area -->
+
+        <ExecRegion Name="ER_RAM_RO" Base="%RAM_BaseAddress%" Options="ABSOLUTE" Size="">
+
+            <!-- the following are dotNetMF's HAL library -->
+  
+            <!-- Fiq profile -->
+            <IfDefined Name="FIQ_SAMPLING_PROFILER">
+                <FileMapping Name="FiqSubhandler_MC9328.obj"  Options="(+RO)" /> <!-- for vector handlers to be far from the vectors -->                
+                <FileMapping Name="sampling_profiler_RAM.obj" Options="(+RO)" /> <!-- for flashing without running from flash -->
+            </IfDefined>
+            
+            <Include File="%SPOCLIENT%\Solutions\STM32F103ZE_RedCow\TinyCLR\scatterfile_ram_functions.xml"/>
+            <Include File="%SPOCLIENT%\Solutions\STM32F103ZE_RedCow\TinyCLR\scatterfile_tinyclr_ram_functions.xml"/>
+
+            <FileMapping Name="*" Options="(SectionForFlashOperations)" />
+            <FileMapping Name="*" Options="(SectionForInterruptHandler)" /><!-- for interrupt handler function -->
+
+        </ExecRegion>
+
+        <ExecRegion Name="ER_RAM_RW" Base="+0" Options="ABSOLUTE" Size="">
+
+            <FileMapping Name="*" Options="(+RW-DATA, +ZI)" />
+
+        </ExecRegion>
+        
+        <!-- Profile build -->
+
+        <IfDefined Name="PROFILE_BUILD">
+            <ExecRegion Name="ER_PROFILERBUFFER_BEGIN" Base="%ProfileBuffer_Begin%" Options="ABSOLUTE" Size="UNINIT">
+                <FileMapping Name="*" Options="(SectionForProfilerBufferBegin)" />
+            </ExecRegion>
+
+            <!-- everything between profilebufferbegin and profilebufferend will be allocated for a buffer -->
+
+            <ExecRegion Name="ER_PROFILERBUFFER_END" Base="%ProfileBuffer_End%" Options="ABSOLUTE" Size="UNINIT">
+                <FileMapping Name="*" Options="(SectionForProfilerBufferEnd)" />
+            </ExecRegion>
+        </IfDefined>
+
+
+
+        <ExecRegion Name="ER_HEAP_BEGIN" Base="%Heap_Begin%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForHeapBegin)" />
+        </ExecRegion>
+
+        <!-- everything between heapbegin and heapend will be allocated for a heap -->
+
+        <ExecRegion Name="ER_HEAP_END" Base="%Heap_End%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForHeapEnd)" />
+        </ExecRegion>
+
+        <ExecRegion Name="ER_CUSTOM_HEAP_BEGIN" Base="%Custom_Heap_Begin%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForCustomHeapBegin)" />
+        </ExecRegion>
+
+        <!-- everything between heapbegin and heapend will be allocated for the unmanaged SimpleHeap -->
+
+        <ExecRegion Name="ER_CUSTOM_HEAP_END" Base="%Custom_Heap_End%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForCustomHeapEnd)" />
+        </ExecRegion>
+
+
+
+        <!-- this must go last here to provide a low water mark on the stack -->
+
+        <ExecRegion Name="ER_STACK_BOTTOM" Base="%Stack_Bottom%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForStackBottom)" />
+        </ExecRegion>
+        
+        <ExecRegion Name="ER_STACK_TOP" Base="%Stack_Top%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForStackTop)" />
+        </ExecRegion>
+
+    </LoadRegion>
+
+    <!-- If this variable is defined, create a separate section for the tinyclr.dat file -->
+
+    <IfDefined Name="Data_BaseAddress">
+
+        <LoadRegion Name="LR_DAT" Base="%Data_BaseAddress%" Options="ABSOLUTE" Size="%Data_Size%">
+
+            <!-- we have arbitrarily asigned 0x00100000 offset in FLASH for the tinyclr.dat, and size of 0x00080000 -->
+
+            <ExecRegion Name="ER_DAT" Base="%Data_BaseAddress%" Options="FIXED" Size="%Data_Size%">
+
+                <FileMapping Name="tinyclr_dat.obj" Options="(+RO)" />
+
+            </ExecRegion>
+
+        </LoadRegion>
+
+    </IfDefined>
+
+    <IfDefined Name="Config_BaseAddress">
+
+        <LoadRegion Name="LR_CONFIG" Base="%Config_BaseAddress%" Options="ABSOLUTE" Size="%Config_Size%">
+
+            <ExecRegion Name="ER_CONFIG" Base="%Config_BaseAddress%" Options="FIXED" Size="%Config_Size%">
+
+                <FileMapping Name="*" Options="(SectionForConfig)" />
+
+            </ExecRegion>
+
+        </LoadRegion>
+
+    </IfDefined>
+
+</ScatterFile>
+
