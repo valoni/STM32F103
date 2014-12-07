@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[HelloWorld.csproj]
+SCC_Aux_Path = "\\Tdsserver\PROJECT"
+SCC_Project_Name = "$/SOURCE CODE/BSP/Microsoft .Net Micro Framework/V4.1/Solutions/STM32F103ZE_RedCow/Application/HELLOWORLD", RXSEAAAA
+
+[HelloWorld.sln]
+SCC_Aux_Path = "\\Tdsserver\PROJECT"
+SCC_Project_Name = "$/SOURCE CODE/BSP/Microsoft .Net Micro Framework/V4.1/Solutions/STM32F103ZE_RedCow/Application/HELLOWORLD", RXSEAAAA

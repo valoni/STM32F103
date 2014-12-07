@@ -1,0 +1,117 @@
+Load "..\\..\\..\\..\\BuildOutput\\THUMB2\\MDK3.80a\\le\\RAM\\debug\\STM32F103ZE_RedCow\\bin\\NativeSample.axf" 
+VTarget = 3.222V
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+DLL version V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V7 compiled Jun 30 2009 11:05:27
+Hardware: V7.00
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+Found 2 JTAG devices, Total IRLen = 9:
+ Id of device #0: 0x3BA00477
+ Id of device #1: 0x06414041
+Cortex-M3 identified.
+JTAG speed: 5 kHz
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "..\\..\\..\\..\\BuildOutput\\THUMB2\\MDK3.80a\\le\\RAM\\debug\\STM32F103ZE_RedCow\\bin\\NativeSample.axf" 
+VTarget = 3.222V
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+DLL version V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V7 compiled Jun 30 2009 11:05:27
+Hardware: V7.00
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+Found 2 JTAG devices, Total IRLen = 9:
+ Id of device #0: 0x3BA00477
+ Id of device #1: 0x06414041
+Cortex-M3 identified.
+JTAG speed: 5 kHz
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "..\\..\\..\\..\\BuildOutput\\THUMB2\\MDK3.80a\\le\\RAM\\debug\\STM32F103ZE_RedCow\\bin\\STM32F103ZE.axf" 
+_____^
+*** error 56: cant open file
+Load "..\\..\\..\\..\\BuildOutput\\THUMB2\\MDK3.80a\\le\\RAM\\debug\\STM32F103ZE_RedCow\\bin\\STM32F103ZE.axf" 
+_____^
+*** error 56: cant open file
+Load "D:\\WorkPlace\\Application\\temptest\\STM32F103ZE\\STM32F103ZE.axf" 
+VTarget = 3.222V
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+DLL version V4.09p, compiled Oct 28 2009 17:33:00
+Firmware: J-Link ARM V7 compiled Jun 30 2009 11:05:27
+Hardware: V7.00
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          0
+Found 2 JTAG devices, Total IRLen = 9:
+ Id of device #0: 0x3BA00477
+ Id of device #1: 0x06414041
+Cortex-M3 identified.
+JTAG speed: 5 kHz
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Info: TotalIRLen = 9, IRPrint = 0x0011
+Info: Found Cortex-M3 r1p1, Little endian.
+Info: TPIU fitted.
+Info: ETM fitted.
+Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.

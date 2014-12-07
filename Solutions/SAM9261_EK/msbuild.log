@@ -1,0 +1,1112 @@
+生成启动时间为 2014/12/1 21:25:40。
+     1>项目“C:\PK\Solutions\SAM9261_EK\dotnetmf.proj”在节点 1 上(build 个目标)。
+     1>项目“C:\PK\Solutions\SAM9261_EK\dotnetmf.proj”(1)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2) (Build 个目标)。
+     2>StartMessage:
+         Doing build of Executable NativeSample - rule is BuildAXF;BuildSigFiles
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Crypto\dotNetMF.proj”(3) (Build 个目标)。
+     3>StartMessage:
+         Doing build of Custom Crypto - rule is CryptoLib
+     3>项目“C:\PK\Crypto\dotNetMF.proj”(3)正在节点 1 上生成“C:\PK\Crypto\stubs\dotnetmf.proj”(5) (Build 个目标)。
+     5>StartMessage:
+         Doing build of Library Crypto_stub - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     5>已完成生成项目“C:\PK\Crypto\stubs\dotnetmf.proj”(Build 个目标)的操作。
+     3>CryptoLib:
+       正在跳过目标“CryptoLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     3>已完成生成项目“C:\PK\Crypto\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Cores\arm\Common\GlobalLock\dotNetMF.proj”(6) (Build 个目标)。
+     6>项目“C:\PK\DeviceCode\Cores\arm\Common\GlobalLock\dotNetMF.proj”(6)正在节点 1 上生成“C:\PK\DeviceCode\Cores\arm\Common\GlobalLock\arm\dotNetMF.proj”(7) (默认目标)。
+     7>StartMessage:
+         Doing build of Library GlobalLock_hal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     7>已完成生成项目“C:\PK\DeviceCode\Cores\arm\Common\GlobalLock\arm\dotNetMF.proj”(默认目标)的操作。
+     6>已完成生成项目“C:\PK\DeviceCode\Cores\arm\Common\GlobalLock\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\cores\arm\dotNetMF.proj”(8) (Build 个目标)。
+     8>StartMessage:
+         Doing build of Library TinyHal - rule is ArmBuildLib
+     8>项目“C:\PK\DeviceCode\cores\arm\dotNetMF.proj”(8)正在节点 1 上生成“C:\PK\DeviceCode\cores\arm\dotNetMF_loader.proj”(9) (Build 个目标)。
+     9>StartMessage:
+         Doing build of Library TinyHal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     9>已完成生成项目“C:\PK\DeviceCode\cores\arm\dotNetMF_loader.proj”(Build 个目标)的操作。
+     8>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+     8>已完成生成项目“C:\PK\DeviceCode\cores\arm\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Stubs\Processor\stubs_PreStackInit\dotNetMF.proj”(10) (Build 个目标)。
+    10>StartMessage:
+         Doing build of Library cpu_prestackinit_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmAssemble:
+       正在跳过目标“ArmAssemble”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    10>已完成生成项目“C:\PK\DeviceCode\Drivers\Stubs\Processor\stubs_PreStackInit\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Cores\arm\Processors\ARM9\Bootstrap\dotNetMF.proj”(11) (Build 个目标)。
+    11>StartMessage:
+         Doing build of Library ARM9_bootstrap - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    11>已完成生成项目“C:\PK\DeviceCode\Cores\arm\Processors\ARM9\Bootstrap\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Backlight\stubs\dotNetMF.proj”(12) (Build 个目标)。
+    12>StartMessage:
+         Doing build of Library backlight_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    12>已完成生成项目“C:\PK\DeviceCode\Drivers\Backlight\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\BatteryCharger\stubs\dotNetMF.proj”(13) (Build 个目标)。
+    13>StartMessage:
+         Doing build of Library batterycharger_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    13>已完成生成项目“C:\PK\DeviceCode\Drivers\BatteryCharger\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\BatteryMeasurement\stubs\dotNetMF.proj”(14) (Build 个目标)。
+    14>StartMessage:
+         Doing build of Library batterymeasurement_hal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    14>已完成生成项目“C:\PK\DeviceCode\Drivers\BatteryMeasurement\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Display\TextFonts\Font8x15\dotNetMF.proj”(15) (Build 个目标)。
+    15>StartMessage:
+         Doing build of Library Display_Font8x15 - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    15>已完成生成项目“C:\PK\DeviceCode\Drivers\Display\TextFonts\Font8x15\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\Display\TX09D71VM1CCA\dotNetMF.proj”(16) (Build 个目标)。
+    16>StartMessage:
+         Doing build of Library TX09D71VM1CCA - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    16>已完成生成项目“C:\PK\DeviceCode\Drivers\Display\TX09D71VM1CCA\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_EBIU\dotNetMF.proj”(17) (Build 个目标)。
+    17>StartMessage:
+         Doing build of Library cpu_ebiu_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    17>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\processor\stubs_EBIU\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_SPI\dotNetMF.proj”(18) (Build 个目标)。
+    18>StartMessage:
+         Doing build of Library AT91_SPI - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    18>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_SPI\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\stubs\Processor\stubs_watchdog\dotNetMF.proj”(19) (Build 个目标)。
+    19>StartMessage:
+         Doing build of Library cpu_watchdog_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    19>已完成生成项目“C:\PK\DeviceCode\Drivers\stubs\Processor\stubs_watchdog\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Ink\stubs\dotNetMF.proj”(20) (Build 个目标)。
+    20>StartMessage:
+         Doing build of Library Ink_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    20>已完成生成项目“C:\PK\DeviceCode\Pal\Ink\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Time\dotNetMF.proj”(21) (Build 个目标)。
+    21>StartMessage:
+         Doing build of Library Time_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    21>已完成生成项目“C:\PK\DeviceCode\Pal\Time\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Gesture\stubs\dotNetMF.proj”(22) (Build 个目标)。
+    22>StartMessage:
+         Doing build of Library Gesture_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    22>已完成生成项目“C:\PK\DeviceCode\Pal\Gesture\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\palevent\stubs\dotNetMF.proj”(23) (Build 个目标)。
+    23>StartMessage:
+         Doing build of Library palevent_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    23>已完成生成项目“C:\PK\DeviceCode\Pal\palevent\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(24) (Build 个目标)。
+    24>StartMessage:
+         Doing build of Library system_initialization_hal - rule is ArmBuildLib
+    24>项目“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(24)正在节点 1 上生成“C:\PK\DeviceCode\Initialization\dotNetMF_loader.proj”(25) (Build 个目标)。
+    25>StartMessage:
+         Doing build of Library system_initialization_hal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    25>已完成生成项目“C:\PK\DeviceCode\Initialization\dotNetMF_loader.proj”(Build 个目标)的操作。
+    24>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    24>已完成生成项目“C:\PK\DeviceCode\Initialization\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(26) (Build 个目标)。
+    26>StartMessage:
+         Doing build of Library asyncproccall_pal - rule is ArmBuildLib
+    26>项目“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(26)正在节点 1 上生成“C:\PK\DeviceCode\PAL\AsyncProcCall\Stubs\dotNetMF.proj”(27) (默认目标)。
+    27>StartMessage:
+         Doing build of Library asyncproccall_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    27>已完成生成项目“C:\PK\DeviceCode\PAL\AsyncProcCall\Stubs\dotNetMF.proj”(默认目标)的操作。
+    26>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    26>已完成生成项目“C:\PK\DeviceCode\PAL\AsyncProcCall\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(28) (Build 个目标)。
+    28>StartMessage:
+         Doing build of Library blockstorage_pal - rule is ArmBuildLib
+    28>项目“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(28)正在节点 1 上生成“C:\PK\DeviceCode\PAL\BlockStorage\Stubs\dotNetMF.proj”(29) (默认目标)。
+    29>StartMessage:
+         Doing build of Library blockstorage_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    29>已完成生成项目“C:\PK\DeviceCode\PAL\BlockStorage\Stubs\dotNetMF.proj”(默认目标)的操作。
+    28>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    28>已完成生成项目“C:\PK\DeviceCode\PAL\BlockStorage\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\dotNetMF.proj”(30) (Build 个目标)。
+    30>StartMessage:
+         Doing build of Library K9F2G08_BL - rule is ArmBuildLib
+       DelBuildLib:
+         del /q  C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL.lib
+         del /q  C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL.lib.manifest
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\SAM9261_EK_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_ARM  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_SAM9261_EK  -DTARGETLOCATION_RAM  -DLITTLE_ENDIAN     --arm  --fpu softvfp  --device DARMATS9 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\SAM9261_EK -IC:\PK\devicecode\Targets\Native\AT91 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\AT91\SAM9261_EK -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\obj\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\K9F2G_8_driver.obj -c C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\K9F2G_8_driver.cpp
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\SAM9261_EK_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_ARM  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_SAM9261_EK  -DTARGETLOCATION_RAM  -DLITTLE_ENDIAN     --arm  --fpu softvfp  --device DARMATS9 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\SAM9261_EK -IC:\PK\devicecode\Targets\Native\AT91 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\AT91\SAM9261_EK -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\obj\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\K9F2G_8_driver.obj -c C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\K9F2G_8_driver.cpp  
+       ArmBuildLib:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL.lib K9F2G_8_driver.obj     
+    30>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Driver\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\addDevices\dotNetMF.proj”(31) (Build 个目标)。
+    31>StartMessage:
+         Doing build of Library BlockStorage_AddDevices_SAM9261_EK - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    31>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\addDevices\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\Watchdog\stubs\dotNetMF.proj”(32) (Build 个目标)。
+    32>StartMessage:
+         Doing build of Library Watchdog_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    32>已完成生成项目“C:\PK\DeviceCode\Pal\Watchdog\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(33) (Build 个目标)。
+    33>StartMessage:
+         Doing build of Library Buttons_pal - rule is ArmBuildLib
+    33>项目“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(33)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Buttons\Stubs\dotNetMF.proj”(34) (默认目标)。
+    34>StartMessage:
+         Doing build of Library Buttons_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    34>已完成生成项目“C:\PK\DeviceCode\PAL\Buttons\Stubs\dotNetMF.proj”(默认目标)的操作。
+    33>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    33>已完成生成项目“C:\PK\DeviceCode\PAL\Buttons\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35) (Build 个目标)。
+    35>StartMessage:
+         Doing build of Library COM_pal - rule is ArmBuildLib
+    35>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(36) (默认目标)。
+    36>StartMessage:
+         Doing build of Library i2c_pal - rule is ArmBuildLib
+    36>项目“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(36)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\i2c\Stubs\dotNetMF.proj”(37) (默认目标)。
+    37>StartMessage:
+         Doing build of Library i2c_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    37>已完成生成项目“C:\PK\DeviceCode\PAL\COM\i2c\Stubs\dotNetMF.proj”(默认目标)的操作。
+    36>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    36>已完成生成项目“C:\PK\DeviceCode\PAL\COM\i2c\dotNetMF.proj”(默认目标)的操作。
+    35>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\sockets\dotNetMF.proj”(38) (默认目标)。
+    38>StartMessage:
+         Doing build of Library sockets_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    38>已完成生成项目“C:\PK\DeviceCode\PAL\COM\sockets\dotNetMF.proj”(默认目标)的操作。
+    35>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(39) (默认目标)。
+    39>StartMessage:
+         Doing build of Library usart_pal - rule is ArmBuildLib
+    39>项目“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(39)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usart\Stubs\dotNetMF.proj”(40) (默认目标)。
+    40>StartMessage:
+         Doing build of Library usart_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    40>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usart\Stubs\dotNetMF.proj”(默认目标)的操作。
+    39>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    39>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usart\dotNetMF.proj”(默认目标)的操作。
+    35>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\usb\dotNetMF.proj”(41) (默认目标)。
+    41>StartMessage:
+         Doing build of Library usb_pal - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    41>已完成生成项目“C:\PK\DeviceCode\PAL\COM\usb\dotNetMF.proj”(默认目标)的操作。
+    35>项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(35)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\stubs\dotNetMF.proj”(42) (默认目标)。
+    42>StartMessage:
+         Doing build of Library COM_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    42>已完成生成项目“C:\PK\DeviceCode\PAL\COM\stubs\dotNetMF.proj”(默认目标)的操作。
+    35>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    35>已完成生成项目“C:\PK\DeviceCode\PAL\COM\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\Config\dotnetmf.proj”(43) (Build 个目标)。
+    43>StartMessage:
+         Doing build of Library DebuggerPort_SSL_Config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    43>已完成生成项目“C:\PK\DeviceCode\PAL\COM\Config\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\COM\Sockets\stubs\dotNetMF.proj”(44) (Build 个目标)。
+    44>StartMessage:
+         Doing build of Library sockets_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    44>已完成生成项目“C:\PK\DeviceCode\PAL\COM\Sockets\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\USB\dotnetmf.proj”(45) (Build 个目标)。
+    45>StartMessage:
+         Doing build of Library usb_pal_config_AT91SAM9 - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    45>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\USB\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Configuration\dotNetMF.proj”(46) (Build 个目标)。
+    46>StartMessage:
+         Doing build of Library config_pal - rule is ArmBuildLib
+    46>项目“C:\PK\DeviceCode\PAL\Configuration\dotNetMF.proj”(46)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Configuration\Stubs\dotNetMF.proj”(47) (默认目标)。
+    47>StartMessage:
+         Doing build of Library config_pal_Stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    47>已完成生成项目“C:\PK\DeviceCode\PAL\Configuration\Stubs\dotNetMF.proj”(默认目标)的操作。
+    46>项目“C:\PK\DeviceCode\PAL\Configuration\dotNetMF.proj”(46)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Configuration\dotNetMF_loader.proj”(48) (Build 个目标)。
+    48>StartMessage:
+         Doing build of Library config_pal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    48>已完成生成项目“C:\PK\DeviceCode\PAL\Configuration\dotNetMF_loader.proj”(Build 个目标)的操作。
+    46>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    46>已完成生成项目“C:\PK\DeviceCode\PAL\Configuration\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(49) (Build 个目标)。
+    49>StartMessage:
+         Doing build of Library events_pal - rule is ArmBuildLib
+    49>项目“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(49)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Events\Stubs\dotNetMF.proj”(50) (默认目标)。
+    50>StartMessage:
+         Doing build of Library events_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    50>已完成生成项目“C:\PK\DeviceCode\PAL\Events\Stubs\dotNetMF.proj”(默认目标)的操作。
+    49>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    49>已完成生成项目“C:\PK\DeviceCode\PAL\Events\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\fs\stubs\dotNetMF.proj”(51) (Build 个目标)。
+    51>StartMessage:
+         Doing build of Library fs_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    51>已完成生成项目“C:\PK\DeviceCode\PAL\fs\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(52) (Build 个目标)。
+    52>StartMessage:
+         Doing build of Library heap_pal - rule is ArmBuildLib
+    52>项目“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(52)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Heap\Stubs\dotNetMF.proj”(53) (默认目标)。
+    53>StartMessage:
+         Doing build of Library heap_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    53>已完成生成项目“C:\PK\DeviceCode\PAL\Heap\Stubs\dotNetMF.proj”(默认目标)的操作。
+    52>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    52>已完成生成项目“C:\PK\DeviceCode\PAL\Heap\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\Piezo\stubs\dotNetMF.proj”(54) (Build 个目标)。
+    54>StartMessage:
+         Doing build of Library piezo_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    54>已完成生成项目“C:\PK\DeviceCode\PAL\Piezo\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap\dotNetMF.proj”(55) (Build 个目标)。
+    55>StartMessage:
+         Doing build of Library SimpleHeap - rule is ArmBuildLib
+    55>项目“C:\PK\DeviceCode\PAL\SimpleHeap\dotNetMF.proj”(55)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap\Stubs\dotNetMF.proj”(56) (默认目标)。
+    56>StartMessage:
+         Doing build of Library SimpleHeap_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    56>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap\Stubs\dotNetMF.proj”(默认目标)的操作。
+    55>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    55>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap_config\dotNetMF.proj”(57) (Build 个目标)。
+    57>StartMessage:
+         Doing build of Library SimpleHeap_config - rule is ArmBuildLib
+    57>项目“C:\PK\DeviceCode\PAL\SimpleHeap_config\dotNetMF.proj”(57)正在节点 1 上生成“C:\PK\DeviceCode\PAL\SimpleHeap_config\Stubs\dotNetMF.proj”(58) (默认目标)。
+    58>StartMessage:
+         Doing build of Library SimpleHeap_config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    58>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap_config\Stubs\dotNetMF.proj”(默认目标)的操作。
+    57>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    57>已完成生成项目“C:\PK\DeviceCode\PAL\SimpleHeap_config\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(59) (Build 个目标)。
+    59>StartMessage:
+         Doing build of Library tinycrt_pal - rule is ArmBuildLib
+    59>项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(59)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\Stubs\dotNetMF.proj”(60) (默认目标)。
+    60>StartMessage:
+         Doing build of Library tinycrt_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    60>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\Stubs\dotNetMF.proj”(默认目标)的操作。
+    59>项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(59)正在节点 1 上生成“C:\PK\devicecode\pal\TinyCRT\dotNetMF_loader.proj”(61) (Build 个目标)。
+    61>StartMessage:
+         Doing build of Library tinycrt_pal_loader - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    61>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF_loader.proj”(Build 个目标)的操作。
+    59>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    59>已完成生成项目“C:\PK\devicecode\pal\TinyCRT\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_AIC\dotNetMF.proj”(62) (Build 个目标)。
+    62>StartMessage:
+         Doing build of Library AT91_AIC - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    62>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_AIC\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_Bootstrap\dotNetMF_SAM9.proj”(63) (Build 个目标)。
+    63>StartMessage:
+         Doing build of Library SAM9_Bootstrap - rule is ArmBuildLib
+    63>项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_Bootstrap\dotNetMF_SAM9.proj”(63)正在节点 1 上生成“C:\PK\DeviceCode\Cores\arm\Processors\ARM9\MMU\dotNetMF.proj”(64) (Build 个目标)。
+    64>StartMessage:
+         Doing build of Library ARM9_mmu - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    64>已完成生成项目“C:\PK\DeviceCode\Cores\arm\Processors\ARM9\MMU\dotNetMF.proj”(Build 个目标)的操作。
+    63>DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    63>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_Bootstrap\dotNetMF_SAM9.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_Cache\dotNetMF.proj”(65) (Build 个目标)。
+    65>StartMessage:
+         Doing build of Library AT91_Cache - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    65>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_Cache\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_GPIO\dotNetMF.proj”(66) (Build 个目标)。
+    66>StartMessage:
+         Doing build of Library AT91_GPIO - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    66>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_GPIO\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_LCD\dotNetMF.proj”(67) (Build 个目标)。
+    67>StartMessage:
+         Doing build of Library AT91_LCD - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    67>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_LCD\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_SAM\dotNetMF.proj”(68) (Build 个目标)。
+    68>StartMessage:
+         Doing build of Library AT91_SAM - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    68>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_SAM\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_TIMER\dotNetMF.proj”(69) (Build 个目标)。
+    69>StartMessage:
+         Doing build of Library AT91_TIMER - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    69>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_TIMER\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_TIME\dotNetMF.proj”(70) (Build 个目标)。
+    70>StartMessage:
+         Doing build of Library AT91_TIME - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    70>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_TIME\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_USART\dotNetMF.proj”(71) (Build 个目标)。
+    71>StartMessage:
+         Doing build of Library AT91_USART - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    71>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_USART\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_USB\dotNetMF.proj”(72) (Build 个目标)。
+    72>StartMessage:
+         Doing build of Library AT91_USB - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    72>已完成生成项目“C:\PK\DeviceCode\Targets\Native\AT91\DeviceCode\AT91_USB\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\dotNetMF.proj”(73) (Build 个目标)。
+    73>StartMessage:
+         Doing build of Library K9F2G08_BL_Config - rule is ArmBuildLib
+       DelBuildLib:
+         del /q  C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL_Config.lib
+         del /q  C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL_Config.lib.manifest
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\SAM9261_EK_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_ARM  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_SAM9261_EK  -DTARGETLOCATION_RAM  -DLITTLE_ENDIAN     --arm  --fpu softvfp  --device DARMATS9 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\SAM9261_EK -IC:\PK\devicecode\Targets\Native\AT91 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\AT91\SAM9261_EK -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\obj\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\K9F2G08_BlConfig.obj -c C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\K9F2G08_BlConfig.cpp
+         "C:\Keil\ARM\bin40\armcc.exe"  --cpp  --diag_suppress 2874,111,161,550,C3011 --diag_suppress 66,161,230,1293 --split_sections  -DMDK_V3_1 -DARM_V3_1 -IC:\PK\DeviceCode -IC:\PK\DeviceCode\pal\rtip -IC:\PK\DeviceCode\pal\rtip\rtpcore -IC:\PK\devicecode\pal\rtip\tinyclr --feedback C:\PK\tools\make\Feedback\SAM9261_EK_MDK.feedback -DTINYCLR_ENABLE_SOURCELEVELDEBUGGING  -DCOMPILE_ARM  -DVERSION_MAJOR=4 -DVERSION_MINOR=2 -DVERSION_BUILD=0 -DVERSION_REVISION=0 -DOEMSYSTEMINFOSTRING="\"Microsoft Copyright (C) Microsoft Corporation.  All rights reserved.\"" -DPLATFORM_ARM_SAM9261_EK  -DTARGETLOCATION_RAM  -DLITTLE_ENDIAN     --arm  --fpu softvfp  --device DARMATS9 --littleend  --debug    --dwarf2 --debug_macros    -O0         --inline --asm --interleave  -DDEBUG -D_DEBUG  -IC:\Keil\ARM\RV31\INC -IC:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config -IC:\PK\DeviceCode\include -IC:\PK\DeviceCode\Cores\arm -IC:\PK\Support\Include   -IC:\PK\crypto\inc  -IC:\PK\CLR\Include -IC:\PK\CLR\Libraries\CorLib -IC:\PK\CLR\Libraries\SPOT -IC:\PK\CLR\Libraries\SPOT_Hardware -IC:\PK\CLR\Libraries\SPOT_Graphics -IC:\PK\CLR\Libraries\SPOT_Net -IC:\PK\CLR\Libraries\SPOT_Net_Security -IC:\PK\Solutions\SAM9261_EK -IC:\PK\devicecode\Targets\Native\AT91 -IC:\PK\DeviceCode\Cores\arm -IC:\PK\DeviceCode\Cores\arm\Include -IC:\PK\DeviceCode -IC:\PK\DeviceCode\Include -IC:\PK\DeviceCode\Targets\Native\AT91\SAM9261_EK -IC:\PK\Support\Include -IC:\PK\DeviceCode\include -IC:\PK\CLR\include -IC:\PK\Crypto\inc    -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\obj\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\K9F2G08_BlConfig.obj -c C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\K9F2G08_BlConfig.cpp  
+       ArmBuildLib:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\K9F2G08_BL_Config.lib K9F2G08_BlConfig.obj     
+    73>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\Blockstorage\K9F2G_8_BS\Config\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\Init\dotnetmf.proj”(74) (Build 个目标)。
+    74>StartMessage:
+         Doing build of Library AT91_SAM_Init - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    74>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\Init\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Solutions\SAM9261_EK\DeviceCode\TX09D71VM1CCA\dotnetmf.proj”(75) (Build 个目标)。
+    75>StartMessage:
+         Doing build of Library TX09D71VM1CCA_Config_AT91 - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    75>已完成生成项目“C:\PK\Solutions\SAM9261_EK\DeviceCode\TX09D71VM1CCA\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Support\CRC\dotNetMF.proj”(76) (Build 个目标)。
+    76>StartMessage:
+         Doing build of Library CRC - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    76>已完成生成项目“C:\PK\Support\CRC\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Support\WireProtocol\dotNetMF.proj”(77) (Build 个目标)。
+    77>StartMessage:
+         Doing build of Library WireProtocol - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    77>已完成生成项目“C:\PK\Support\WireProtocol\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\PAL\FS\stubs\config\dotnetmf.proj”(78) (Build 个目标)。
+    78>StartMessage:
+         Doing build of Library FS_Config_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    78>已完成生成项目“C:\PK\DeviceCode\PAL\FS\stubs\config\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\Test\native\src\dotnetmf.proj”(79) (Build 个目标)。
+    79>StartMessage:
+         Doing build of Library Native - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    79>已完成生成项目“C:\PK\Test\native\src\dotnetmf.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Pal\TimeService\stubs\dotNetMF.proj”(80) (Build 个目标)。
+    80>StartMessage:
+         Doing build of Library TimeService_pal_stubs - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    80>已完成生成项目“C:\PK\DeviceCode\Pal\TimeService\stubs\dotNetMF.proj”(Build 个目标)的操作。
+     2>项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(2)正在节点 1 上生成“C:\PK\DeviceCode\Drivers\BlockStorage\WearLeveling\dotnetmf.proj”(81) (Build 个目标)。
+    81>StartMessage:
+         Doing build of Library BS_WearLeveling - rule is ArmBuildLib
+       DelBuildLib:
+       正在跳过目标“DelBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       CreateLibManifest:
+       正在跳过目标“CreateLibManifest”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmBuildLib:
+       正在跳过目标“ArmBuildLib”，因为所有输出文件相对于输入文件而言都是最新的。
+    81>已完成生成项目“C:\PK\DeviceCode\Drivers\BlockStorage\WearLeveling\dotnetmf.proj”(Build 个目标)的操作。
+     2>ArmCompileCPP:
+       正在跳过目标“ArmCompileCPP”，因为所有输出文件相对于输入文件而言都是最新的。
+       ArmCompileC:
+       正在跳过目标“ArmCompileC”，因为它没有输出。
+       BuildScatterfile:
+         ...
+       BuildAXF:
+         "C:\Keil\ARM\bin40\armar.exe"  --create -c -r C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\tmp_NativeSample.lib CRC.lib WireProtocol.lib
+         "C:\Keil\ARM\bin40\armlink.exe"  --no_keep_init_arrays --feedback C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample_SAM9261_EK_RAM_debug_MDK.feedback  --debug --remove --unmangled --info sizes,totals,veneers,unused,libraries --map  --xref --symbols --callgraph --userlibpath C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib --userlibpath C:\PK\BuildOutput\ARM\MDK\le\ANY_MEDIA\debug\lib --libpath C:\Keil\ARM\RV31\LIB  --entry EntryPoint  --symdefs C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.symdefs --list C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.map --output C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.axf --scatter C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample_scatterfile.txt C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\obj\Solutions\SAM9261_EK\NativeSample\NativeSample.obj  Crypto.lib GlobalLock_hal.lib TinyHal.lib cpu_prestackinit_stubs.lib ARM9_bootstrap.lib backlight_hal_stubs.lib batterycharger_hal_stubs.lib batterymeasurement_hal_stubs.lib Display_Font8x15.lib TX09D71VM1CCA.lib cpu_ebiu_stubs.lib AT91_SPI.lib cpu_watchdog_stubs.lib Ink_pal_stubs.lib Time_pal.lib Gesture_pal_stubs.lib palevent_pal_stubs.lib system_initialization_hal.lib asyncproccall_pal.lib blockstorage_pal.lib K9F2G08_BL.lib BlockStorage_AddDevices_SAM9261_EK.lib Watchdog_pal_stubs.lib Buttons_pal.lib COM_pal.lib DebuggerPort_SSL_config_stubs.lib i2c_pal_stubs.lib sockets_pal_stubs.lib usart_pal.lib usb_pal.lib usb_pal_config_AT91SAM9.lib config_pal.lib events_pal.lib fs_pal_stubs.lib heap_pal.lib piezo_pal_stubs.lib SimpleHeap.lib SimpleHeap_config.lib tinycrt_pal.lib AT91_AIC.lib SAM9_Bootstrap.lib AT91_Cache.lib AT91_GPIO.lib AT91_LCD.lib AT91_SAM.lib AT91_TIMER.lib AT91_TIME.lib AT91_USART.lib AT91_USB.lib K9F2G08_BL_Config.lib AT91_SAM_Init.lib TX09D71VM1CCA_Config_AT91.lib FS_Config_stubs.lib Native.lib TimeService_pal_stubs.lib BS_WearLeveling.lib ARM9_mmu.lib C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\tmp_NativeSample.lib
+         "C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample_scatterfile.txt", line 14 (column 12): Warning: L6314W: No section matches pattern *(SectionForBootstrapInRam).
+         Finished: 0 information, 1 warning and 0 error messages.
+         del /q C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\lib\tmp_NativeSample.lib
+         "C:\Keil\ARM\bin40\fromelf.exe"  --text -c -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.axfdump C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.axf
+         "C:\Keil\ARM\bin40\fromelf.exe"  --bin  -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.bin     C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.axf
+         "C:\Keil\ARM\bin40\fromelf.exe"  --m32  -o C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.hex     C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.axf
+       FindBinFilesForSig:
+         del /q C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.sig
+         file selected 
+         file selected C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.bin
+         file selected C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.bin
+       BuildSigFiles:
+         Create Signature files for C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.bin
+         C:\PK\BuildOutput\public\debug\Server\dll\MetaDataProcessor.exe -sign_file C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.bin C:\PK\tools\bin\tinybooter_private_key.bin C:\PK\BuildOutput\ARM\MDK\le\RAM\debug\SAM9261_EK\bin\NativeSample.sig
+     2>已完成生成项目“C:\PK\Solutions\SAM9261_EK\NativeSample\NativeSample.proj”(Build 个目标)的操作。
+     1>已完成生成项目“C:\PK\Solutions\SAM9261_EK\dotnetmf.proj”(build 个目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:07.76

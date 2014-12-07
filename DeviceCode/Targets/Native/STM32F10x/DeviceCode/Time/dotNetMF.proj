@@ -1,0 +1,52 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>CPU_Time_STM32F10x</AssemblyName>
+    <ProjectGuid>{462EC703-CA8A-4c67-88A8-24B8D4EA0299}</ProjectGuid>
+    <Size>
+    </Size>
+    <Description>STM32F10x Time library</Description>
+    <Level>HAL</Level>
+    <LibraryFile>CPU_Time_STM32F10x.$(LIB_EXT)</LibraryFile>
+    <ProjectPath>$(SPOCLIENT)\DeviceCode\Targets\Native\STM32F10x\DeviceCode\Time\dotNetMF.proj</ProjectPath>
+    <ManifestFile>CPU_Time_STM32F10x.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>Processor\stubs</Groups>
+    <LibraryCategory>
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Time_HAL" Guid="{5E34988C-B17B-48F5-B849-A612F3DE93B9}" ProjectPath="" Conditional="" xmlns="">
+        <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
+          <Major>4</Major>
+          <Minor>0</Minor>
+          <Revision>0</Revision>
+          <Build>0</Build>
+          <Extra />
+          <Date>2010-12-10</Date>
+        </VersionDependency>
+        <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">LibraryCategory</ComponentType>
+      </MFComponent>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <CustomFilter>
+    </CustomFilter>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>False</IsStub>
+    <Directory>DeviceCode\Targets\Native\STM32F10x\DeviceCode\Time</Directory>
+    <OutputType>Library</OutputType>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="STM32F10x_Time.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup> 
+   	<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\Configure" /> 
+		<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\STM32F10x_StdPeriph_Driver\inc" /> 
+  	<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\CMSIS\Core\CM3\" />   	
+  	<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\INTC" />	
+  </ItemGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

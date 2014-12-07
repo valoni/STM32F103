@@ -1,0 +1,68 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>TinyHal</AssemblyName>
+    <ProjectGuid>{FD7AA7B6-61DA-4c66-BC83-BEAE0D2F68CD}</ProjectGuid>
+    <Size>
+    </Size>
+    <Description>Core HAL library</Description>
+    <Level>HAL</Level>
+    <LibraryFile>TinyHal.$(LIB_EXT)</LibraryFile>
+    <ProjectPath>$(SPOCLIENT)\DeviceCode\Targets\Native\STM32F10x\DeviceCode\cores\arm\dotNetMF.proj</ProjectPath>
+    <ManifestFile>TinyHal.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>System</Groups>
+    <LibraryCategory>
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TinyHal_HAL" Guid="{37C37BC0-3CA6-4C1C-A26F-4761A7BA3C05}" ProjectPath="" Conditional="" xmlns="">
+        <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
+          <Major>4</Major>
+          <Minor>0</Minor>
+          <Revision>0</Revision>
+          <Build>0</Build>
+          <Extra />
+          <Date>2009-04-30</Date>
+        </VersionDependency>
+        <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">LibraryCategory</ComponentType>
+      </MFComponent>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <CustomFilter>
+    </CustomFilter>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>False</IsStub>
+    <Directory>DeviceCode\Targets\Native\STM32F10x\DeviceCode\cores\arm</Directory>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <Import Project="$(SPOCLIENT)\Framework\Features\PreStackInit_HAL.libcatproj" />
+  <PropertyGroup>
+    <OutputType Condition="'$(PLATFORM_FAMILY)'=='arm'">Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(INSTRUCTION_SET)'=='arm' or '$(INSTRUCTION_SET)'=='thumb' ">
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\cpwait.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\FirstEntry.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\IDelayLoop.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\Sampling_Profiler_RAM.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\VectorsHandlers.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\arm\$(AS_SUBDIR)\VectorsTrampolines.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\Diagnostics\FIQAssembly\$(AS_SUBDIR)\FiqSubhandler_MC9328.s"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(INSTRUCTION_SET)'=='thumb2'">    
+   	<Compile Include="$(SPOCLIENT)\DeviceCode\cores\arm\AssemblyCode\thumb2\$(AS_SUBDIR)\FirstEntry.s" />    
+    <Compile Include="$(SPOCLIENT)\DeviceCode\Targets\Native\STM32F10x\DeviceCode\cores\arm\AssemblyCode\thumb2\$(AS_SUBDIR)\VectorsHandlers.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\Targets\Native\STM32F10x\DeviceCode\cores\arm\AssemblyCode\thumb2\$(AS_SUBDIR)\VectorsTrampolines.s" />
+    <Compile Include="$(SPOCLIENT)\DeviceCode\Targets\Native\STM32F10x\DeviceCode\cores\arm\AssemblyCode\thumb2\$(AS_SUBDIR)\HandlersReallocate.s" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <LIB_FIRSTENTRY_OBJ Include="$(OBJ_DIR)\FirstEntry.$(OBJ_EXT)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ExtraProjects Include="$(SPOCLIENT)\DeviceCode\cores\arm\dotNetMF_loader.proj" Condition="'$(PLATFORM_FAMILY)'=='arm'" />
+  </ItemGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>
