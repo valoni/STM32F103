@@ -9,6 +9,41 @@
 //////////////////////////////////////////////////////////////////////////////
 // S3C2416_GPIO_Driver
 //
+typedef struct 
+{
+  __IO uint32_t GPIOCON ;//Configures the pins of port
+  __IO uint32_t GPIODAT ;//The data register for port
+  __IO uint32_t GPIOUDP ;//Pull-up/down control register for port B
+  __IO uint32_t GPIOSEL ;//Selects the function of port B
+  __IO uint32_t Reserved0;//
+}  S3C2416_GPIO_TYPE
+
+#define S3C2416_GPIOA_BASE  ELFIN_GPIO_BASE
+#define S3C2416_GPIOB_BASE (ELFIN_GPIO_BASE + 0x10)
+#define S3C2416_GPIOC_BASE (ELFIN_GPIO_BASE + 0x20)
+#define S3C2416_GPIOD_BASE (ELFIN_GPIO_BASE + 0x30)
+#define S3C2416_GPIOE_BASE (ELFIN_GPIO_BASE + 0x40)
+#define S3C2416_GPIOF_BASE (ELFIN_GPIO_BASE + 0x50)
+#define S3C2416_GPIOG_BASE (ELFIN_GPIO_BASE + 0x60)
+#define S3C2416_GPIOH_BASE (ELFIN_GPIO_BASE + 0x70)
+#define S3C2416_GPIOJ_BASE (ELFIN_GPIO_BASE + 0xd0)
+#define S3C2416_GPIOK_BASE (ELFIN_GPIO_BASE + 0xe0)
+#define S3C2416_GPIOL_BASE (ELFIN_GPIO_BASE + 0xf0)
+#define S3C2416_GPIOM_BASE (ELFIN_GPIO_BASE + 0x100)
+
+#define GPIOA  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOA_BASE)
+#define GPIOB  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOB_BASE)
+#define GPIOC  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOC_BASE)
+#define GPIOD  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOD_BASE)
+#define GPIOE  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOE_BASE)
+#define GPIOF  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOF_BASE)
+#define GPIOG  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOG_BASE)
+#define GPIOH  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOH_BASE)
+#define GPIOJ  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOJ_BASE)
+#define GPIOK  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOK_BASE)
+#define GPIOL  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOL_BASE)
+#define GPIOM  ((S3C2416_GPIO_TYPE *) S3C2416_GPIOM_BASE)
+
 struct S3C2416_GPIO_Driver
 {
     struct PIN_ISR_DESCRIPTOR
@@ -109,6 +144,8 @@ struct S3C2416_GPIO_Driver
     static BOOL SetDebounce( INT64 debounceTimeMilliseconds );
 
     static void GetPinsMap( UINT8* pins, size_t size );
+	
+	
     
 private:
 
@@ -133,7 +170,38 @@ private:
 
         return bit + (port * c_PinsPerPort);
     }
-
+   
+    static UINT32 GetPort(UINT8 ports)
+	{
+	   switch(ports)
+	   case 0 :return GPIOA;
+                            	   break; 
+	   case 1 :return GPIOB;
+                            	   break; 
+       case 2 :return GPIOC;
+                            	   break; 
+       case 3 :return GPIOD;
+                            	   break; 
+       case 4 :return GPIOE;
+                            	   break; 
+       case 5 :return GPIOF;
+                            	   break; 
+       case 6 :return GPIOG;
+                            	   break; 
+       case 7 :return GPIOH;
+                            	   break; 
+       case 8 :return GPIOJ;
+                            	   break;
+       case 9 :return GPIOK;
+                            	   break;
+       case 10:return GPIOL;
+                            	   break;		
+       case 11:return GPIOM;
+                            	   break;	
+       default:                    
+	                               break;								   
+	}
+	
     static void STUB_GPIOISRVector( GPIO_PIN Pin, BOOL PinState, void* Param );
 };
 
