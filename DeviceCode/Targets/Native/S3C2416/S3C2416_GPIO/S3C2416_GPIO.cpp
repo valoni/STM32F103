@@ -1011,19 +1011,13 @@ BOOL S3C2416_GPIO_Driver::ReservePin( GPIO_PIN pin, BOOL fReserve )
 
 UINT32 S3C2416_GPIO_Driver::GetDebounce()
 {
-#if !defined(PLATFORM_ARM_SAM7_ANY)
+
     return CPU_TicksToTime( g_S3C2416_GPIO_Driver.m_DebounceTicks ) / TIME_CONVERSION__TO_MILLISECONDS;
-#else
-    // assume that it takes 16 ticks for each ms the user wants
-    // this of course needs calibration and it boils down to assessing 
-    // what the loop in HandleDebounce takes
-    return (S3C2416_GPIO_Driver::PIN_ISR_DESCRIPTOR::c_DebounceCount >> 4);
-#endif
 }
 
 BOOL S3C2416_GPIO_Driver::SetDebounce( INT64 debounceTimeMilliseconds )
 {   
-#if !defined(PLATFORM_ARM_SAM7_ANY)
+
     if(debounceTimeMilliseconds < c_MinDebounceTimeMs || c_MaxDebounceTimeMs < debounceTimeMilliseconds )
     {
         return FALSE;
@@ -1032,10 +1026,7 @@ BOOL S3C2416_GPIO_Driver::SetDebounce( INT64 debounceTimeMilliseconds )
     g_S3C2416_GPIO_Driver.m_DebounceTicks = CPU_MillisecondsToTicks( (UINT32)debounceTimeMilliseconds );
 
     return TRUE;
-#else
-    // cannot specify the debounce time
-    return FALSE;
-#endif
+
 }
 
 //--//
@@ -1089,7 +1080,7 @@ extern const UINT8 S3C2416_GPIO_Driver::PIN_ISR_DESCRIPTOR::c_Status_AllowLowEdg
 #endif
 
 
-#if !defined(PLATFORM_ARM_SAM7_ANY)
+
 void S3C2416_GPIO_Driver::PIN_ISR_DESCRIPTOR::HandleDebounce( BOOL edge )
 {
     ASSERT_IRQ_MUST_BE_OFF();
@@ -1103,22 +1094,7 @@ void S3C2416_GPIO_Driver::PIN_ISR_DESCRIPTOR::HandleDebounce( BOOL edge )
         m_completion.EnqueueTicks( HAL_Time_CurrentTicks() + g_S3C2416_GPIO_Driver.m_DebounceTicks );
     }
 }
-#else
-void S3C2416_GPIO_Driver::PIN_ISR_DESCRIPTOR::HandleDebounce( BOOL edge )
-{
-    ASSERT_IRQ_MUST_BE_OFF();
 
-    UINT32 count = c_DebounceCount;
-
-    // we implement debouce by reading the pin a finite number of times
-    while(--count > 0)
-    {
-        if(GetPinState( m_pin ) != edge)
-        {
-            // it was a glitch
-            return;
-        }
-    }
 
     // debounce test passed
     Fire( this );
