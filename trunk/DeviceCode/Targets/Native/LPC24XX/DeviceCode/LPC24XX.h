@@ -86,7 +86,7 @@ struct LPC24XX_VIC
     /****/ volatile UINT32 SOFTINT;     // Force SW interrupt
     /****/ volatile UINT32 SOFTINTCLR;  // Clear SW interrupt
     /****/ volatile UINT32 PROTECTEN;   // VIC registers can only be accessed in privileged mode
-      /****/ volatile UINT32 PRIORITYMASK;// Mask interrupt priority level
+	/****/ volatile UINT32 PRIORITYMASK;// Mask interrupt priority level
 
      volatile UINT32 Padding0[54];
 
@@ -190,6 +190,9 @@ struct LPC24XX_TIMER
     /****/ volatile UINT32 CR2;    // Capture 2 register
     /****/ volatile UINT32 CR3;    // Capture 3 register
     /****/ volatile UINT32 EMR;    // External match register
+	/****/ volatile UINT32 dummy1[13];     // Filler to align next register address
+	/****/ volatile UINT32 CTCR;    // 计数控制器
+
     //functions.
     static UINT32 inline getIntNo(int Timer)
     {
@@ -475,53 +478,53 @@ struct LPC24XX_GPIO
 
 struct LPC24XX_GPIOIRQ
 {
-    
-    // GPIO IRQ registers for P0 & P2
+	
+	// GPIO IRQ registers for P0 & P2
 
-    static const UINT32 c_GPIOIRQ_Base = 0xE0028080;
-    
-    //GPIO Interrupt registers (port 0 & 2 only can generate IRQs)
-    
-    //IRQ Overall Status
-    UINT32 volatile IOIntStatus;    // 0xE0028080
-    
-    ////////////
-    // PORT 0 //
-    ////////////
-    
-    //IRQ Status
-    UINT32 volatile IO0IntStatR;    // 0xE0028084
-    UINT32 volatile IO0IntStatF;    // 0xE0028088
-    
-    //IRQ Clear
-    UINT32 volatile IO0IntClr;        // 0xE002808C
-    
-    //IRQ Enable
-    UINT32 volatile IO0IntEnR;        // 0xE0028090
-    UINT32 volatile IO0IntEnF;        // 0xE0028094
-    
-    //////////////////
-    // DUMMY PORT 1 //
-    //////////////////
-    
-    UINT32 P1_generates_no_irqs[3]; // 0xE00280{98-9C-A0} (why did they leave just 3 empty regs?)
-    
-    ////////////
-    // PORT 2 //
-    ////////////
-    
-    //IRQ Status
-    UINT32 volatile IO2IntStatR;    // 0xE00280A4
-    UINT32 volatile IO2IntStatF;    // 0xE00280A8
-    
-    //IRQ Clear
-    UINT32 volatile IO2IntClr;        // 0xE00280AC
-    
-    //IRQ Enable
-    UINT32 volatile IO2IntEnR;        // 0xE00280B0
-    UINT32 volatile IO2IntEnF;        // 0xE00280B4
-    
-    
+	static const UINT32 c_GPIOIRQ_Base = 0xE0028080;
+	
+	//GPIO Interrupt registers (port 0 & 2 only can generate IRQs)
+	
+	//IRQ Overall Status
+	UINT32 volatile IOIntStatus;	// 0xE0028080
+	
+	////////////
+	// PORT 0 //
+	////////////
+	
+	//IRQ Status
+	UINT32 volatile IO0IntStatR;	// 0xE0028084
+	UINT32 volatile IO0IntStatF;	// 0xE0028088
+	
+	//IRQ Clear
+	UINT32 volatile IO0IntClr;		// 0xE002808C
+	
+	//IRQ Enable
+	UINT32 volatile IO0IntEnR;		// 0xE0028090
+	UINT32 volatile IO0IntEnF;		// 0xE0028094
+	
+	//////////////////
+	// DUMMY PORT 1 //
+	//////////////////
+	
+	UINT32 P1_generates_no_irqs[3]; // 0xE00280{98-9C-A0} (why did they leave just 3 empty regs?)
+	
+	////////////
+	// PORT 2 //
+	////////////
+	
+	//IRQ Status
+	UINT32 volatile IO2IntStatR;	// 0xE00280A4
+	UINT32 volatile IO2IntStatF;	// 0xE00280A8
+	
+	//IRQ Clear
+	UINT32 volatile IO2IntClr;		// 0xE00280AC
+	
+	//IRQ Enable
+	UINT32 volatile IO2IntEnR;		// 0xE00280B0
+	UINT32 volatile IO2IntEnF;		// 0xE00280B4
+	
+	
 };
 //
 // GP I/O
@@ -642,7 +645,7 @@ struct LPC24XX_USART
         } FCR;
     } SEL3;
     
-    /****/ volatile UINT32 UART_LCR;                                   // line control register.
+    /****/ volatile UINT32 UART_LCR;                                       // line control register.
     //--//  
     static const UINT32 UART_LCR_DLAB                   = 0x00000080;     // Dividor Latch Access bit.     
     static const UINT32 UART_LCR_BCB                    = 0x00000040;     // Break control bit.
@@ -658,10 +661,10 @@ struct LPC24XX_USART
     static const UINT32 UART_LCR_WLS_7_BITS             = 0x00000002; 
     static const UINT32 UART_LCR_WLS_8_BITS             = 0x00000003;             
 
-    /****/ volatile UINT32 UART_MCR_UART1_ONLY;                        // modem control register. 
-        
-    /****/ volatile UINT32 UART_LSR;                                   //line status register.
-    static const UINT32 UART_LSR_ERR_RX                 = 0x00000080;     //Rx FIFO error 
+	/****/ volatile UINT32 UART_MCR;                                       // modem control register. 只有UART1使用 
+
+	/****/ volatile UINT32 UART_LSR;                                       //line status register.
+	static const UINT32 UART_LSR_ERR_RX                 = 0x00000080;     //Rx FIFO error 
     static const UINT32 UART_LSR_TE                     = 0x00000040;     //Transmitter Empty.
     static const UINT32 UART_LSR_THRE                   = 0x00000020;     //Transmitter Holding register Empty. 
     static const UINT32 UART_LSR_BII                    = 0x00000010;     //Break interrupt indicator.
@@ -669,31 +672,28 @@ struct LPC24XX_USART
     static const UINT32 UART_LSR_PEI                    = 0x00000004;     //Parity Error indicator.
     static const UINT32 UART_LSR_OEI                    = 0x00000002;     //Overrun Error indicator.
     static const UINT32 UART_LSR_RFDR                   = 0x00000001;     //RX FIFO data ready.
-    
-    /****/ volatile UINT32 UART_MSR_UART1_ONLY;                        //Modem status register.
 
-    /****/ volatile UINT32 UART_SCR;                                   //Scratch pad register.
+	/****/ volatile UINT32 UART_MSR;                                   //Modem status register. 只有UART1使用
 
-    /****/ volatile UINT32 UART_ACR;                                   //Autobaud control register.
-    static const UINT32 UART_ACR_START                   = 0x00000001;     // Start bit
-    static const UINT32 UART_ACR_MODE1                   = 0x00000002;     // Mode 1
-    static const UINT32 UART_ACR_AUTO_RESTART            = 0x00000004;     // Auto Restart
-    static const UINT32 UART_ACR_AUTOBAUD_INT_CLR        = 0x00000100;     // Autobaud interrupt clear
-    static const UINT32 UART_ACR_TIMEOUT_INT_CLR         = 0x00000200;     // Autobaud timeout interrupt clear
+	/****/ volatile UINT32 UART_SCR;									//高速缓存
 
-    /****/ volatile UINT32 UART_ICR;                                   //IrDA control register.
+	/****/ volatile UINT32 UART_ACR;									//自动波特率控制
+	/****/ volatile UINT32 UART_ICR;									//IrDA控制只有UART3使用
+	
+	/****/ volatile UINT32 UART_FDR;									//小数分频器
+	static const UINT32 UART_FDR_MULVAL_shift			= 0x00000004;   //MULVAL
+	static const UINT32 UART_FDR_DIVADDVAL_shift		= 0x00000000;   //DIVADDVAL
+		
+	static const UINT32 UART_FDR_DIVADDVAL_Min				= 0x00000001;   //小数分频器除数的最小值
+	static const UINT32 UART_FDR_DIVADDVAL_Max				= 0x0000000F;   //小数分频器除数的最大值
 
-    /****/ volatile UINT32 UART_FDR;                                   //Fractional divider register.
-    static const UINT32 UART_FDR_DIVADDVAL_mask          = 0x0000000F;    
-    static const UINT32 UART_FDR_DIVADDVAL_shift         = 0x00000000;    
-    static const UINT32 UART_FDR_MULVAL_mask             = 0x000000F0;    
-    static const UINT32 UART_FDR_MULVAL_shift            = 0x00000004;    
+	static const UINT32 UART_FDR_MULVAL_Min					= 0x00000000;   //小数分频器被除数的最小值
+	static const UINT32 UART_FDR_MULVAL_Max					= 0x0000000F;   //小数分频器被除数的最大值
 
-    /****/ volatile UINT32 PADDING_3;                                    
 
-    /****/ volatile UINT32 UART_TER;                                   //Transmit Enable register.
-    static const UINT32 UART_TER_TXEN                    = 0x00000080;  //TX Enable bit
-          
+	/****/ volatile UINT32 dummy1; 
+	/****/ volatile UINT32 UART_TER;									//发送使能
+
     //functions.
     static UINT32 inline getIntNo(int ComPortNum)
     {
@@ -733,8 +733,6 @@ struct LPC24XX_PCB
     {
         /****/ volatile UINT32 PINSEL;    // Pin Configuration Register
     } Regs[10];
-    static const UINT32 PINSEL2_PWM0_GPIO_P1_2  = (0x11 << 4);
-    static const UINT32 PINSEL7_PWM1_GPIO_P3_24 = (0x11 << 4);  
     
     /****/ volatile UINT32 PINSEL10;      // ETM Interface Pin control
 
@@ -793,10 +791,8 @@ struct LPC24XX_SYSCON
     // Power Control
     /****/ volatile UINT32 PCON;          // Power Control Register
     /****/ volatile UINT32 PCONP;         // Power Control for Peripherals
-    static const UINT32 ENABLE_ENET  = 0x40000000;
-    static const UINT32 ENABLE_LCD   = 0x00100000;
-    static const UINT32 ENABLE_PWM0  = 0x00000020;
-    static const UINT32 ENABLE_PWM1  = 0x00000040;
+    static const UINT32 ENABLE_ENET = 0x40000000;
+    static const UINT32 ENABLE_LCD  = 0x00100000;
     /****/ volatile UINT32 dummy3[15];    // Filler to align next register address
 
     // Clock Control
@@ -833,38 +829,7 @@ struct LPC24XX_SYSCON
     /****/ volatile UINT32 IRCTRIM;       // IRC Trim Register
     // Peripheral clock control
     /****/ volatile UINT32 PCLKSEL0;      // Peripheral Clock Selection register 0
-    static const UINT32 PCLK_CLK_DIV_1       = 0x01;
-    static const UINT32 PCLK_CLK_DIV_2       = 0x02;
-    static const UINT32 PCLK_CLK_DIV_4       = 0x00;
-    static const UINT32 PCLK_CLK_DIV_8       = 0x03;
-
-    static const UINT32 PCLK_UART0_SHIFT     = 6;    
-    static const UINT32 PCLK_UART0_MASK      = (0x03ul << PCLK_UART0_SHIFT);
-    static const UINT32 PCLK_UART1_SHIFT     = 8;    
-    static const UINT32 PCLK_UART1_MASK      = (0x03ul << PCLK_UART0_SHIFT);
-
-
     /****/ volatile UINT32 PCLKSEL1;      // Peripheral Clock Selection register 1    
-    static const UINT32 PCLK_PWM0_SHIFT     = 10;    
-    static const UINT32 PCLK_PWM0_MASK      = (0x03 << PCLK_PWM0_SHIFT);
-    static const UINT32 PCLK_PWM0_CLK_DIV_1 = (0x01 << PCLK_PWM0_SHIFT);
-    static const UINT32 PCLK_PWM0_CLK_DIV_2 = (0x02 << PCLK_PWM0_SHIFT);
-    static const UINT32 PCLK_PWM0_CLK_DIV_4 = (0x00 << PCLK_PWM0_SHIFT);
-    static const UINT32 PCLK_PWM0_CLK_DIV_8 = (0x03 << PCLK_PWM0_SHIFT);
-
-    static const UINT32 PCLK_PWM1_SHIFT     = 12;    
-    static const UINT32 PCLK_PWM1_MASK      = (0x03 << PCLK_PWM1_SHIFT);
-    static const UINT32 PCLK_PWM1_CLK_DIV_1 = (0x01 << PCLK_PWM1_SHIFT);
-    static const UINT32 PCLK_PWM1_CLK_DIV_2 = (0x02 << PCLK_PWM1_SHIFT);
-    static const UINT32 PCLK_PWM1_CLK_DIV_4 = (0x00 << PCLK_PWM1_SHIFT);
-    static const UINT32 PCLK_PWM1_CLK_DIV_8 = (0x03 << PCLK_PWM1_SHIFT);
-
-    static const UINT32 PCLK_UART2_SHIFT     = 16;    
-    static const UINT32 PCLK_UART2_MASK      = (0x03ul << PCLK_UART0_SHIFT);
-    static const UINT32 PCLK_UART3_SHIFT     = 18;    
-    static const UINT32 PCLK_UART3_MASK      = (0x03ul << PCLK_UART0_SHIFT);
-
-
 
     /****/ volatile UINT32 dummy7[2];     // Filler to align next register address   
     //LCD clock Divider
@@ -938,9 +903,10 @@ struct LPC24XX_EMC
     /****/ volatile UINT32 SWAITPAGE0;    // Selects the delay for asynchronous page mode sequential accesses for chip select 0. - 0x1F R/W
     /****/ volatile UINT32 SWAITWR0;      // Selects the delay from chip select 0 to a write access. - 0x1F R/W
     /****/ volatile UINT32 SWAITTURN0;    // Selects the number of bus turnaround cycles for chip select 0. - 0xF R/W
+    
+	/****/ volatile UINT32 dummy8;        // Filler to align next register address
 
-    /****/ volatile UINT32 dummy8;        // Filler to align next register address
-    /****/ volatile UINT32 SCONFIG1;      // Selects the memory configuration for Static chip select 1. - 0x0 R/W
+	/****/ volatile UINT32 SCONFIG1;      // Selects the memory configuration for Static chip select 1. - 0x0 R/W
     /****/ volatile UINT32 SWAITWEN1;     // Selects the delay from chip select 1 to write enable. - 0x0 R/W
     /****/ volatile UINT32 SWAITOEN1;     // Selects the delay from chip select 1 or address change, whichever is later, to output enable. - 0x0 R/W
     /****/ volatile UINT32 SWAITRD1;      // Selects the delay from chip select 1 to a read access. - 0x1F R/W
@@ -949,6 +915,7 @@ struct LPC24XX_EMC
     /****/ volatile UINT32 SWAITTURN1;    // Selects the number of bus turnaround cycles for chip select 1. - 0xF R/W
 
     /****/ volatile UINT32 dummy9;        // Filler to align next register address
+
     /****/ volatile UINT32 SCONFIG2;      // Selects the memory configuration for Static chip select 2. - 0x0 R/W
     /****/ volatile UINT32 SWAITWEN2;     // Selects the delay from chip select 2 to write enable. - 0x0 R/W
     /****/ volatile UINT32 SWAITOEN2;     // Selects the delay from chip select 2 or address change, whichever is later, to output enable. - 0x0 R/W
@@ -956,15 +923,18 @@ struct LPC24XX_EMC
     /****/ volatile UINT32 SWAITPAGE2;    // Selects the delay for asynchronous page mode sequential accesses for chip select 2. - 0x1F R/W
     /****/ volatile UINT32 SWAITWR2;      // Selects the delay from chip select 2 to a write access. - 0x1F R/W
     /****/ volatile UINT32 SWAITTURN2;    // Selects the number of bus turnaround cycles for chip select 2. - 0xF R/W
+   
+	/****/ volatile UINT32 dummy10;        // Filler to align next register address
 
-    /****/ volatile UINT32 dummy10;        // Filler to align next register address
-    /****/ volatile UINT32 SCONFIG3;      // Selects the memory configuration for Static chip select 3. - 0x0 R/W
+	/****/ volatile UINT32 SCONFIG3;      // Selects the memory configuration for Static chip select 3. - 0x0 R/W
     /****/ volatile UINT32 SWAITWEN3;     // Selects the delay from chip select 3 to write enable. - 0x0 R/W
     /****/ volatile UINT32 SWAITOEN3;     // Selects the delay from chip select 3 or address change, whichever is later, to output enable. - 0x0 R/W
     /****/ volatile UINT32 SWAITRD3;      // Selects the delay from chip select 3 to a read access. - 0x1F R/W
     /****/ volatile UINT32 SWAITPAGE3;    // Selects the delay for asynchronous page mode sequential accesses for chip select 3. - 0x1F R/W
     /****/ volatile UINT32 SWAITWR3;      // Selects the delay from chip select 3 to a write access. - 0x1F R/W
     /****/ volatile UINT32 SWAITTURN3;    // Selects the number of bus turnaround cycles for chip select 3. - 0xF R/W
+	/****/ volatile UINT32 dummy11;        // Filler to align next register address
+
 };
 //
 // External Memory Controller
@@ -1108,97 +1078,23 @@ struct LPC24XX_WATCHDOG
 //
 struct LPC24XX_DAC
 {
-    /****/ volatile UINT32 DACR;
-    
-    static const UINT32 c_DAC_Base        = 0xE006C000;
-    static const UINT32 c_DAC_AOUT        = LPC24XX_GPIO::c_P0_26;
-    
-    static const UINT32 Timer    = LPC24XX_TIMER::c_Timer_1;
-    
-    //to zero out reserved bits and bias bit
-    static const UINT32 VALUE_MASK        = 0x0000FFC0;
-    // 0x0001 0000 for maximum output current.
-    // 0x0000 0000 for faster settle time, but half max output
-    static const UINT32 TRADE_SPEED_FOR_POWER = 0x00010000;
+	/****/ volatile UINT32 DACR;
+	
+    static const UINT32 c_DAC_Base		= 0xE006C000;
+	static const UINT32 c_DAC_AOUT		= LPC24XX_GPIO::c_P0_26;
+	
+	static const UINT32 Timer	= LPC24XX_TIMER::c_Timer_1;
+	
+	//to zero out reserved bits and bias bit
+	static const UINT32 VALUE_MASK		= 0x0000FFC0;
+	// 0x0001 0000 for maximum output current.
+	// 0x0000 0000 for faster settle time, but half max output
+	static const UINT32 TRADE_SPEED_FOR_POWER = 0x00010000;
 
 };
 
 //
 // DAC
-//////////////////////////////////////////////////////////////////////////////
-
-
-//////////////////////////////////////////////////////////////////////////////
-// PWM
-//
-struct LPC24XX_PWM
-{
-    static const UINT32 c_PWM_Base_0        = 0xE0014000;
-    static const UINT32 c_PWM_Base_1        = 0xE0018000;
-
-    //--//
-
-    /****/ volatile UINT32 IR;
-    
-    /****/ volatile UINT32 TCR;
-    static const UINT32    TCR_COUNTER_ENABLE = 0x00000001;
-    static const UINT32    TCR_COUNTER_RESET  = 0x00000002;
-    static const UINT32    TCR_PWM_ENABLE     = 0x00000008;
-
-    /****/ volatile UINT32 TC;
-
-    /****/ volatile UINT32 PR;
-
-    /****/ volatile UINT32 PC;
-
-    /****/ volatile UINT32 MCR;
-    static const UINT32    MCR_MR0_INTERRUPT = 0x00000001;
-    static const UINT32    MCR_MR0_RESET_TC  = 0x00000002;
-    static const UINT32    MCR_MR0_STOP_TC   = 0x00000004;
-        
-    /****/ volatile UINT32 MR0;
-
-    /****/ volatile UINT32 MR1;
-
-    /****/ volatile UINT32 MR2;
-
-    /****/ volatile UINT32 MR3;
-
-    /****/ volatile UINT32 CCR;
-
-    /****/ volatile UINT32 CR0;
-
-    /****/ volatile UINT32 CR1;
-
-    /****/ volatile UINT32 dummy1[3];
-
-    /****/ volatile UINT32 MR4;
-
-    /****/ volatile UINT32 MR5;
-
-    /****/ volatile UINT32 MR6;
-
-    /****/ volatile UINT32 PCR;
-    static const UINT32    PCR_ENABLE_1 = 0x00000200;
-    static const UINT32    PCR_ENABLE_2 = 0x00000400;
-
-    /****/ volatile UINT32 LER;
-    static const UINT32    LER_ENABLE_0     = 0x00000001;
-    static const UINT32    LER_ENABLE_1     = 0x00000002;
-    static const UINT32    LER_ENABLE_2     = 0x00000004;
-    static const UINT32    LER_ENABLE_3     = 0x00000008;
-    static const UINT32    LER_ENABLE_4     = 0x00000010;
-    static const UINT32    LER_ENABLE_5     = 0x00000020;
-    static const UINT32    LER_ENABLE_6     = 0x00000040;
-
-    /****/ volatile UINT32 dummy2[7];
-
-    /****/ volatile UINT32 CTCR;
-    
-};
-
-//
-// PWM
 //////////////////////////////////////////////////////////////////////////////
 
 /**********************************************************************************************************************/
@@ -1209,28 +1105,17 @@ struct LPC24XX_PWM
 
 struct LPC24XX
 {
-    static LPC24XX_VIC    & VIC    (         ) { return *(LPC24XX_VIC*     )(size_t)( LPC24XX_VIC     ::c_VIC_Base      ); }
-    static LPC24XX_GPIO   & GPIO   (         ) { return *(LPC24XX_GPIO*    )(size_t)( LPC24XX_GPIO    ::c_GPIO_Base     ); }
-    static LPC24XX_GPIOIRQ& GPIOIRQ(         ) { return *(LPC24XX_GPIOIRQ* )(size_t)( LPC24XX_GPIOIRQ ::c_GPIOIRQ_Base  ); }
-    static LPC24XX_PCB    & PCB    (         ) { return *(LPC24XX_PCB*     )(size_t)( LPC24XX_PCB     ::c_PCB_Base      ); }
-    static LPC24XX_SYSCON & SYSCON (         ) { return *(LPC24XX_SYSCON*  )(size_t)( LPC24XX_SYSCON  ::c_SYSCON_Base   ); }
-    static LPC24XX_EMC    & EMC    (         ) { return *(LPC24XX_EMC*     )(size_t)( LPC24XX_EMC     ::c_EMC_Base      ); }
-    static LPC24XX_SPI    & SPI    ( int sel ) { return *(LPC24XX_SPI*     )(size_t)( LPC24XX_SPI     ::c_SPI0_Base     ); }
-    static LPC24XX_I2C    & I2C    (         ) { return *(LPC24XX_I2C*     )(size_t)( LPC24XX_I2C     ::c_I2C_Base      ); }
-    static LPC24XX_WATCHDOG & WTDG (         ) { return *(LPC24XX_WATCHDOG*)(size_t)( LPC24XX_WATCHDOG::c_WATCHDOG_Base ); }
-    static LPC24XX_DAC      & DAC  (         ) { return *(LPC24XX_DAC*     )(size_t)( LPC24XX_DAC     ::c_DAC_Base      ); }
-    static LPC24XX_PWM      & PWM  ( int sel ) 
-    { 
-        if(sel == PWM_CHANNEL_0)
-        {
-            return *(LPC24XX_PWM*)(size_t)LPC24XX_PWM::c_PWM_Base_0;
-        }
-        else 
-        {
-            return *(LPC24XX_PWM*)(size_t)LPC24XX_PWM::c_PWM_Base_1;
-        }
-    }
-    
+    static LPC24XX_VIC    & VIC    (         ) { return *(LPC24XX_VIC    *)(size_t)(      LPC24XX_VIC   ::c_VIC_Base                                  ); }
+    static LPC24XX_GPIO   & GPIO   (         ) { return *(LPC24XX_GPIO   *)(size_t)(      LPC24XX_GPIO  ::c_GPIO_Base                                 ); }
+	static LPC24XX_GPIOIRQ   & GPIOIRQ   (         ) { return *(LPC24XX_GPIOIRQ   *)(size_t)(      LPC24XX_GPIOIRQ  ::c_GPIOIRQ_Base                                 ); }
+    static LPC24XX_PCB    & PCB    (         ) { return *(LPC24XX_PCB    *)(size_t)(      LPC24XX_PCB   ::c_PCB_Base                                  ); }
+    static LPC24XX_SYSCON & SYSCON (         ) { return *(LPC24XX_SYSCON *)(size_t)(      LPC24XX_SYSCON::c_SYSCON_Base                               ); }
+    static LPC24XX_EMC    & EMC    (         ) { return *(LPC24XX_EMC    *)(size_t)(      LPC24XX_EMC   ::c_EMC_Base                                  ); }
+    static LPC24XX_SPI    & SPI    ( int sel ) { return *(LPC24XX_SPI    *)(size_t)(      LPC24XX_SPI   ::c_SPI0_Base                                 ); }
+    static LPC24XX_I2C    & I2C    (         ) { return *(LPC24XX_I2C    *)(size_t)(      LPC24XX_I2C   ::c_I2C_Base                                  ); }
+    static LPC24XX_WATCHDOG & WTDG	 (		   ) { return *(LPC24XX_WATCHDOG *)(size_t)( LPC24XX_WATCHDOG ::c_WATCHDOG_Base                             ); }
+	static LPC24XX_DAC    & DAC    (         ) { return *(LPC24XX_DAC    *)(size_t)(      LPC24XX_DAC   ::c_DAC_Base                                  ); }
+
    
     static LPC24XX_TIMER  & TIMER( int sel )
     { 
@@ -1476,8 +1361,6 @@ struct LPC24XX_USART_Driver
     static const UINT32 c_COM2      = 1;
     static const UINT32 c_COM3      = 2;
     static const UINT32 c_COM4      = 3;
-
-
     INT8 m_RefFlags[2];
 
 
@@ -1499,6 +1382,7 @@ struct LPC24XX_USART_Driver
 private:
     static void UART_IntHandler                   ( void *     Param             );
     static BOOL IsValidPortNum                    ( int ComPortNum               );
+	static void SetBoudrateDivisor				  ( int ComPortNum, int BaudRate );
 };
 
 extern LPC24XX_USART_Driver g_LPC24XX_USART_Driver;
@@ -1523,14 +1407,14 @@ struct LPC24XX_GPIO_Driver
         GPIO_INT_EDGE                  m_intEdge;
         UINT8                          m_flags;
         UINT8                          m_status;
-        UINT32                        m_lastExecTicks;
+		UINT32						m_lastExecTicks;
 
         //--//
         
         static const UINT8 c_Flags_Debounce        = 0x01;
-        
-        // we are not using these
-        
+		
+		// we are not using these
+		
         /*static const UINT8 c_Flags_RequireLowEdge  = 0x02;
         static const UINT8 c_Flags_RequireHighEdge = 0x04;
 
@@ -1608,8 +1492,8 @@ struct LPC24XX_GPIO_Driver
     static UINT8 GetSupportedResistorModes( GPIO_PIN pin );
 
     static UINT8 GetSupportedInterruptModes( GPIO_PIN pin );   
-    
-    static void GPIO_ISR( void* Param );
+	
+	static void GPIO_ISR( void* Param );
 
 /*    static void PortConfiguration( UINT32 Port, UINT32 ConfigValue );
 
@@ -1739,8 +1623,6 @@ extern LPC24XX_I2C_Driver g_LPC24XX_I2C_Driver;
 //
 
 struct LPC24XX_WATCHDOG_Driver
-
-
 {
     static const UINT32 c_MinCounter  = 256;
     static const UINT32 c_Granularity = TEN_MHZ*4 / SLOW_CLOCKS_PER_SECOND; // us
@@ -1787,54 +1669,54 @@ extern LPC24XX_WATCHDOG_Driver g_LPC24XX_WATCHDOG_Driver;
  */
  
  //Maximum size in bytes of a decoded MP3 Frame
-#define MAX_DECODED_FRAME_SIZE            0x900
+#define MAX_DECODED_FRAME_SIZE			0x900
  
-#define DAC_FRAME_BUFFERS_NUM             16
+#define DAC_FRAME_BUFFERS_NUM 			16
 //a sample is 2 bytes
-#define DAC_FRAME_BUFFER_SIZE_SAMPLES     MAX_DECODED_FRAME_SIZE/2
+#define DAC_FRAME_BUFFER_SIZE_SAMPLES 	MAX_DECODED_FRAME_SIZE/2
 
 struct LPC24XX_DAC_Driver
 {
-    static void Initialize  ( UINT32 SampleFrequencyHz );
-    
+	static void Initialize  ( UINT32 SampleFrequencyHz );
+	
     static void Uninitialize();
 
-    //enable timer interrupts for output
+	//enable timer interrupts for output
     static BOOL On();
-    
-    //disable timer interrupts
-    static BOOL Off();
-    
-    //give info on whether the DAC is or is not converting samples
-    static BOOL IsEnabled();
-    
-    //Samples left in the buffer
-    static UINT32 GetBufferLevel();
-    
-    //Max SampleBuffer Capacity (in 16bit samples)
-    static UINT32 GetBufferCapacity();
-    
-    //FRAMES left in the buffer
-    static UINT32 GetFramesLeft();
-    
-    //Max SampleBuffer Capacity (in FRAMES)
-    static UINT32 GetBufferFrameCapacity();
-    
-    //return false if there was not enough space left
-    static BOOL AddFrame(short const * const Samples, UINT32 const SamplesNum);
+	
+	//disable timer interrupts
+	static BOOL Off();
+	
+	//give info on whether the DAC is or is not converting samples
+	static BOOL IsEnabled();
+	
+	//Samples left in the buffer
+	static UINT32 GetBufferLevel();
+	
+	//Max SampleBuffer Capacity (in 16bit samples)
+	static UINT32 GetBufferCapacity();
+	
+	//FRAMES left in the buffer
+	static UINT32 GetFramesLeft();
+	
+	//Max SampleBuffer Capacity (in FRAMES)
+	static UINT32 GetBufferFrameCapacity();
+	
+	//return false if there was not enough space left
+	static BOOL AddFrame(short const * const Samples, UINT32 const SamplesNum);
 
 
 
-    short SamplesBuffer[DAC_FRAME_BUFFERS_NUM*DAC_FRAME_BUFFER_SIZE_SAMPLES];
-    UINT16 SamplesInFrame[DAC_FRAME_BUFFERS_NUM];
-    UINT32 nextFrameWrite;
-    UINT32 nextFrameRead;
-    UINT32 nextSampleRead;
-    UINT32 SampleCount;
-    UINT32 FrameCount;
-    UINT32 SampleTimeInCycles;
-    
-    //output next sample
+	short SamplesBuffer[DAC_FRAME_BUFFERS_NUM*DAC_FRAME_BUFFER_SIZE_SAMPLES];
+	UINT16 SamplesInFrame[DAC_FRAME_BUFFERS_NUM];
+	UINT32 nextFrameWrite;
+	UINT32 nextFrameRead;
+	UINT32 nextSampleRead;
+	UINT32 SampleCount;
+	UINT32 FrameCount;
+	UINT32 SampleTimeInCycles;
+	
+	//output next sample
     static void ISR( void* Param );
 };
 
@@ -1915,53 +1797,5 @@ struct LPC24XX_SOCKETS_Driver
 //
 // SOCKET driver
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////
-// PWM driver
-//
-
-struct LPC24XX_PWM_Driver
-{
-    // for this specific processor, we will use the channel as a synomim for controller, and proceed from there    
-    
-    static const UINT32 c_Channels = 2;
-
-    static const GPIO_PIN c_Channel_0_Pin1 = LPC24XX_GPIO::c_P1_02; 
-    static const GPIO_PIN c_Channel_0_Pin2 = LPC24XX_GPIO::c_P1_03; // use this for channel 0
-    static const GPIO_PIN c_Channel_0_Pin3 = LPC24XX_GPIO::c_P1_05; 
-    static const GPIO_PIN c_Channel_0_Pin4 = LPC24XX_GPIO::c_P1_06; 
-    static const GPIO_PIN c_Channel_0_Pin5 = LPC24XX_GPIO::c_P1_07; 
-    static const GPIO_PIN c_Channel_0_Pin6 = LPC24XX_GPIO::c_P1_11; 
-    
-    static const GPIO_PIN c_Channel_1_Pin1 = LPC24XX_GPIO::c_P1_18; // use this for channel 1
-    static const GPIO_PIN c_Channel_1_Pin2 = LPC24XX_GPIO::c_P1_20; 
-    static const GPIO_PIN c_Channel_1_Pin3 = LPC24XX_GPIO::c_P1_21; 
-    static const GPIO_PIN c_Channel_1_Pin4 = LPC24XX_GPIO::c_P1_23; 
-    static const GPIO_PIN c_Channel_1_Pin5 = LPC24XX_GPIO::c_P1_24; 
-    static const GPIO_PIN c_Channel_1_Pin6 = LPC24XX_GPIO::c_P1_26; 
-
-    //-//
-    
-    static BOOL     Initialize        ( PWM_CHANNEL channel );
-    static BOOL     Uninitialize      ( PWM_CHANNEL channel );
-    static BOOL     ApplyConfiguration( PWM_CHANNEL channel, GPIO_PIN pin, UINT32& period, UINT32& duration, PWM_SCALE_FACTOR& scale, BOOL invert );
-    static BOOL     Start             ( PWM_CHANNEL channel, GPIO_PIN pin );
-    static void     Stop              ( PWM_CHANNEL channel, GPIO_PIN pin );
-    static BOOL     Start             ( PWM_CHANNEL* channel, GPIO_PIN* pin, UINT32 count );
-    static void     Stop              ( PWM_CHANNEL* channel, GPIO_PIN* pin, UINT32 count );
-    static UINT32   Channels          ( );
-    static GPIO_PIN GetPinForChannel  ( PWM_CHANNEL channel );
-
-    //--//
-
-    static void EnablePin( PWM_CHANNEL channel, GPIO_PIN pin );
-    static void DisablePin( PWM_CHANNEL channel, GPIO_PIN pin );
-};
-
-//
-// PWM driver
-/////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 #endif // _LPC24XX_H_ 1

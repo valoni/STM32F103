@@ -160,6 +160,8 @@
 
 /* PINSEL11 selction for TFT 16 5:6:5 */
 #define TFT_16_565 0xB
+#define LCD_PORT_ENABLE			1
+#define LCD_PORT_ENABLE_thift	0
 
 //////////////////////////////////////////////////////////////////////////////
 // LCD Controller
@@ -194,7 +196,7 @@ struct LPC24XX_LCDC
     static const UINT32 c_LCD_VD_22 = LPC24XX_GPIO::c_P1_28; // Blue 3
     static const UINT32 c_LCD_VD_21 = LPC24XX_GPIO::c_P1_27; // Blue 2
     static const UINT32 c_LCD_VD_20 = LPC24XX_GPIO::c_P1_26; // Blue 1
-    static const UINT32 c_LCD_VD_19 = LPC24XX_GPIO::c_P2_13; // Blue 0       
+    static const UINT32 c_LCD_VD_19 = LPC24XX_GPIO::c_P2_13; // Blue 0 
 
     /****/ volatile UINT32 LCD_TIMH;      /* LCD horizontal axis plane control register */
     /****/ volatile UINT32 LCD_TIMV;      /* LCD vertical axis plane control register */

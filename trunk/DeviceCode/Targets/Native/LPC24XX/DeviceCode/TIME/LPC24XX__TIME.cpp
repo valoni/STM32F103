@@ -205,7 +205,7 @@ BOOL LPC24XX_TIME_Driver::Initialize()
     //
     // This bootstraps the overflow mechanism.
     //
-    LPC24XX_TIMER_Driver::SetCompare( LPC24XX_Driver::c_SystemTime_Timer, g_LPC24XX_TIME_Driver.m_nextCompare );
+    LPC24XX_TIMER_Driver::SetCompare( LPC24XX_Driver::c_SystemTime_Timer, c_OverflowCheck );
 
     LPC24XX_TIMER_Driver::EnableCompareInterrupt( LPC24XX_Driver::c_SystemTime_Timer );
 
@@ -222,21 +222,25 @@ BOOL LPC24XX_TIME_Driver::Uninitialize()
 UINT64 LPC24XX_TIME_Driver::CounterValue()
 {
     UINT64 lastValue = g_LPC24XX_TIME_Driver.m_lastRead;
-    UINT32 resHigh = (UINT32)(lastValue >> 32);
-    UINT32 resLow  = (UINT32)(lastValue & 0xFFFFFFFF);
 
     UINT32 value = LPC24XX_TIMER_Driver::ReadCounter( LPC24XX_Driver::c_SystemTime_Timer );
 
+    UINT32 resHigh = (UINT32)(lastValue >> 32);
+    UINT32 resLow  = (UINT32) lastValue       ;
+
     //DEBUG_TRACE2(TRACE_COUNTER_READS,"CounterValue_Inner: %08x%08x ", resHigh, resLow);
 
-    if(value <= resLow)
+    if((resLow & c_OverflowCheck) != (value & c_OverflowCheck))
     {
-        resHigh += 1;
-    }
-    
-    g_LPC24XX_TIME_Driver.m_lastRead = (UINT64)resHigh << 32 | value;
+        if((value & c_OverflowCheck) == 0)
+        {
+            //DEBUG_TRACE3(TRACE_COUNTER_OVERFLOWS,"CounterValue: Overflow %08x %08x=>%08x", resHigh, resLow, value);
 
-    return g_LPC24XX_TIME_Driver.m_lastRead;
+            resHigh += 1;
+        }
+    }
+
+    return (UINT64)resHigh << 32 | value;
 }
 
 void LPC24XX_TIME_Driver::SetCompareValue( UINT64 CompareValue )
@@ -245,39 +249,70 @@ void LPC24XX_TIME_Driver::SetCompareValue( UINT64 CompareValue )
 
     g_LPC24XX_TIME_Driver.m_nextCompare = CompareValue;
 
-    UINT64 currValue = g_LPC24XX_TIME_Driver.CounterValue();
+    UINT32 highComp = (UINT32)(CompareValue >> 32);
+    UINT32 lowComp  = (UINT32) CompareValue       ;
+
+    UINT32 highRead = (UINT32)(g_LPC24XX_TIME_Driver.m_lastRead >> 32);
+    UINT32 lowRead  = (UINT32) g_LPC24XX_TIME_Driver.m_lastRead       ;
 
     bool fForceInterrupt = false;
 
-    if(CompareValue < currValue)
+    //DEBUG_TRACE4(TRACE_SETCOMPARE,"SetCompareValue: Comp:%08x%08x : Read:%08x%08x ", highComp, lowComp, highRead, lowRead);
+
+    UINT32 lowReadNew = LPC24XX_TIMER_Driver::ReadCounter( LPC24XX_Driver::c_SystemTime_Timer );
+
+    //DEBUG_TRACE1(TRACE_SETCOMPARE,"%08x\r\n", lowReadNew);
+
+    if((lowRead & c_OverflowCheck) != (lowReadNew & c_OverflowCheck))
     {
         fForceInterrupt = true; //DEBUG_TRACE1(TRACE_SETCOMPARE,"ForceInterrupt: %d\r\n", __LINE__);
     }
     else
     {
-            INT64 diff = CompareValue - currValue;
-            INT32 nextComp;
+        lowRead = lowReadNew;
 
-            if(diff > 0xFFFFFFFFull)
+        if(highComp < highRead)
+        {
+            fForceInterrupt = true; //DEBUG_TRACE1(TRACE_SETCOMPARE,"ForceInterrupt: %d\r\n", __LINE__);
+        }
+        else if(highComp == highRead)
+        {
+            if(lowComp <= lowRead)
             {
-                nextComp = (UINT32)(currValue - 0xFFF); // leave some time so we don't miss the timer overlap
+                fForceInterrupt = true; //DEBUG_TRACE1(TRACE_SETCOMPARE,"ForceInterrupt: %d\r\n", __LINE__);
             }
-            else
+        }
+        else
+        {
+            lowComp = 0xFFFFFFFF;
+        }
+
+        if(fForceInterrupt == false)
+        {
+            UINT32 nextComp = (lowRead & c_OverflowCheck) ? 0 : c_OverflowCheck;
+
+            INT32 diff1 = (INT32)(lowComp  - lowRead);
+            INT32 diff2 = (INT32)(nextComp - lowRead);
+
+            if(diff1 > 0 && diff1 < diff2)
             {
-                nextComp = (UINT32)currValue + (UINT32)diff; // don't worry about overflow.
+                nextComp = lowComp;
             }
 
             LPC24XX_TIMER_Driver::SetCompare( LPC24XX_Driver::c_SystemTime_Timer, nextComp );
 
-            currValue = g_LPC24XX_TIME_Driver.CounterValue();
+            lowReadNew = LPC24XX_TIMER_Driver::ReadCounter( LPC24XX_Driver::c_SystemTime_Timer );
 
-            if(CompareValue < currValue)
+            INT32 diff = nextComp - lowReadNew;
+
+            if(diff < 0)
             {
                 //
                 // We missed it, make sure we process an interrupt anyway.
                 //
                 fForceInterrupt = true; //DEBUG_TRACE4(TRACE_SETCOMPARE,"ForceInterrupt: %d %d %08x %08x\r\n", __LINE__, diff, nextComp, lowReadNew);
             }
+        }
     }
 
     if(fForceInterrupt)
@@ -298,9 +333,9 @@ void LPC24XX_TIME_Driver::ISR( void* Param )
         LPC24XX_TIMER_Driver::ResetCompareHit( LPC24XX_Driver::c_SystemTime_Timer );
     }
 
-    UINT64 value = CounterValue();
+    g_LPC24XX_TIME_Driver.m_lastRead = CounterValue();
 
-    if(value >= g_LPC24XX_TIME_Driver.m_nextCompare)
+    if(g_LPC24XX_TIME_Driver.m_lastRead >= g_LPC24XX_TIME_Driver.m_nextCompare)
     {
         // this also schedules the next one, if there is one
         HAL_COMPLETION::DequeueAndExec();

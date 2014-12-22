@@ -12,11 +12,13 @@
 //-----------------------------------------------------------------------------
 
 #include <tinyhal.h>
+#include "..\LPC24XX.h"
 #include "LPC24XX_LCDC.h"
 
 BOOL LPC24XX_LCDC_Driver::Initialize(DISPLAY_CONTROLLER_CONFIG& config)
 {
-	UINT32 tmp;
+
+	UINT32 tmp = 0 ;
 
 	LPC24XX_LCDC & LCDC = *(LPC24XX_LCDC *)LPC24XX_LCDC::c_LCDC_Base;
 
@@ -24,10 +26,12 @@ BOOL LPC24XX_LCDC_Driver::Initialize(DISPLAY_CONTROLLER_CONFIG& config)
 
 	/* Power Up the LCD controller. */
 	LPC24XX::SYSCON().PCONP |= LPC24XX_SYSCON::ENABLE_LCD;
-
+	
 	/* Disable the display in case it is on */
 	LCDC.LCD_CTRL = 0;
 
+	//delay_Ns(20);
+	
 	/* Generate the horizontal axis plane control word */
 	tmp = (CLCDC_LCDTIMING0_PPL(config.Width) |
 	     CLCDC_LCDTIMING0_HSW(config.HorizontalSyncPulseWidth) |
@@ -98,6 +102,8 @@ BOOL LPC24XX_LCDC_Driver::Initialize(DISPLAY_CONTROLLER_CONFIG& config)
 
 	/* All interrupts off */
 	LCDC.LCD_INTMSK = 0x0;
+	
+	//delay_Ns(20);
 
 	if ( config.BitsPerPixel != 16 )
 	{
@@ -112,7 +118,7 @@ BOOL LPC24XX_LCDC_Driver::Initialize(DISPLAY_CONTROLLER_CONFIG& config)
 	tmp |= CLCDC_LCDCTRL_TFT | CLCDC_LCDCTRL_BGR;
 
 	LCDC.LCD_CTRL = tmp;
-
+	//delay_Ns(20);
 	volatile UINT32 * pPal = LCDC.LCD_PAL;
 	for(int i =0; i <128;i++)
 		pPal[i]=0; 
@@ -165,10 +171,16 @@ void LPC24XX_LCDC_Driver::ConnectPins (void)
 {
     // TODO Make pin list part of the display config. Compute value of PINSEL11 from Display config
     // Initialize pins
-    LPC24XX::PCB().PINSEL10 = 0x0;
-    LPC24XX::PCB().PINSEL11 = TFT_16_565;
+	
+	//LPC24XX::PCB().Regs[0].PINSEL= LPC24XX::PCB().Regs[0].PINSEL & ~(0xfff << 8)   | (0x555 << 8); 
+	//LPC24XX::PCB().Regs[3].PINSEL= LPC24XX::PCB().Regs[3].PINSEL & ~(0xfffff << 8) | (0x55555 << 8);
+	//LPC24XX::PCB().Regs[4].PINSEL= LPC24XX::PCB().Regs[4].PINSEL & ~(0x3f << 22)   | 0x054fffff;
+	//LPC24XX::PCB().Regs[9].PINSEL= LPC24XX::PCB().Regs[9].PINSEL &  ~(0xf << 24)    | (0xa << 24);
 
-    CPU_GPIO_DisablePin( LPC24XX_LCDC::c_LCD_PWR, RESISTOR_DISABLED, GPIO_ATTRIBUTE_NONE, GPIO_ALT_MODE_3 );
+    LPC24XX::PCB().PINSEL10 = 0x0;
+    LPC24XX::PCB().PINSEL11 = (TFT_16_565|(LCD_PORT_ENABLE<<LCD_PORT_ENABLE_thift));
+
+	CPU_GPIO_DisablePin( LPC24XX_LCDC::c_LCD_PWR, RESISTOR_DISABLED, GPIO_ATTRIBUTE_NONE, GPIO_ALT_MODE_3 );
     CPU_GPIO_DisablePin( LPC24XX_LCDC::c_LCD_LE, RESISTOR_DISABLED, GPIO_ATTRIBUTE_NONE, GPIO_ALT_MODE_3 );
     CPU_GPIO_DisablePin( LPC24XX_LCDC::c_LCD_DCLK, RESISTOR_DISABLED, GPIO_ATTRIBUTE_NONE, GPIO_ALT_MODE_3 );
     CPU_GPIO_DisablePin( LPC24XX_LCDC::c_LCD_FP, RESISTOR_DISABLED, GPIO_ATTRIBUTE_NONE, GPIO_ALT_MODE_3 );

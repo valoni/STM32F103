@@ -126,7 +126,45 @@ BOOL CPU_USART_IsBaudrateSupported(int ComPortNum, UINT32& BaudrateHz)
 
 
 //--//
+static UINT32 inline getAbs(int value)
+{
+	return value > 0 ? value : -value;
+}
 
+void LPC24XX_USART_Driver::SetBoudrateDivisor( int ComPortNum, int BaudRate )
+{
+	GLOBAL_LOCK(irq);
+
+	ASSERT(LPC24XX_USART_Driver::IsValidPortNum(ComPortNum));
+	
+	UINT32	mulval = LPC24XX_USART::UART_FDR_MULVAL_Min ;
+	UINT32	divaddval = LPC24XX_USART::UART_FDR_DIVADDVAL_Min;
+	UINT32	m = LPC24XX_USART::UART_FDR_MULVAL_Min;
+	UINT32	d = LPC24XX_USART::UART_FDR_DIVADDVAL_Min;
+
+	UINT32	divisor =  ((LPC24XX_USART::c_ClockRate / ( BaudRate * 16 )));
+	UINT32  actualBoudRate = LPC24XX_USART::c_ClockRate / (16 * divisor );
+	UINT32  baudRateAbs = getAbs(BaudRate - actualBoudRate);
+	UINT32  baudRateAbsNext = baudRateAbs; 
+
+	LPC24XX_USART& USARTC = LPC24XX::UART(ComPortNum);
+
+	for(m = LPC24XX_USART::UART_FDR_MULVAL_Min; m <= LPC24XX_USART::UART_FDR_MULVAL_Max; m++)
+	{
+		for(d = LPC24XX_USART::UART_FDR_DIVADDVAL_Min; d <= LPC24XX_USART::UART_FDR_DIVADDVAL_Max ; d++)
+		{
+			baudRateAbsNext = getAbs(actualBoudRate * m / ( m + d) - BaudRate);
+			if( baudRateAbsNext < baudRateAbs )
+			{
+				mulval = m;
+				divaddval = d;
+				baudRateAbs = baudRateAbsNext;
+			}
+		}
+	}
+
+	USARTC.UART_FDR = (mulval<<LPC24XX_USART::UART_FDR_MULVAL_shift)|(divaddval<<LPC24XX_USART::UART_FDR_DIVADDVAL_shift);
+}
 
 BOOL LPC24XX_USART_Driver::IsValidPortNum(int ComPortNum)
 {
@@ -135,16 +173,15 @@ BOOL LPC24XX_USART_Driver::IsValidPortNum(int ComPortNum)
 }
 
 //--//
-
 void LPC24XX_USART_Driver::UART_IntHandler (void *param)
 {
-
    GLOBAL_LOCK(irq);
 
    ASSERT(LPC24XX_USART_Driver::IsValidPortNum((UINT32)param));    
    char c; 
    UINT32 ComNum = (UINT32)param;
    UINT32 i;
+   UINT32 rxcnt=0;  
    LPC24XX_USART& USARTC = LPC24XX::UART(ComNum);
    volatile UINT32 IIR_Value;
    volatile UINT32 LSR_Value;
@@ -155,14 +192,14 @@ void LPC24XX_USART_Driver::UART_IntHandler (void *param)
    IIR_Value = USARTC.SEL3.IIR.UART_IIR & LPC24XX_USART::UART_IIR_IID_mask; 
 
    if (IIR_Value & LPC24XX_USART::UART_IIR_NIP)
+   {
          ASSERT(0);
-
+   }
     // Read data from Rx FIFO
 
    while (true) 
    {
      LSR_Value = *regLSR ;
-
      if (LSR_Value & LPC24XX_USART::UART_LSR_RFDR)
      {
        volatile UINT8 rxdata = (UINT8 ) *regRBR;
@@ -171,11 +208,12 @@ void LPC24XX_USART_Driver::UART_IntHandler (void *param)
 
      }
      else
+	 {
        break;
+	 }
    }
+
    // Send up to 2 bytes of Tx data
-
-
    for (i = 0; i <2; i++)
    {
 
@@ -192,36 +230,31 @@ void LPC24XX_USART_Driver::UART_IntHandler (void *param)
 	     TxBufferEmptyInterruptEnable( ComNum, FALSE );
 	     break;
 	 }
-
    }
-
-
 }
 
 //--//
-
 BOOL LPC24XX_USART_Driver::Initialize( int ComPortNum, int BaudRate, int Parity, int DataBits, int StopBits, int FlowValue )
 {
-
     GLOBAL_LOCK(irq);
     LPC24XX_USART& USARTC = LPC24XX::UART(ComPortNum);
     UINT32     divisor;     
     BOOL   fRet = TRUE;    
     
     ASSERT(LPC24XX_USART_Driver::IsValidPortNum(ComPortNum));
-    
-    //calculate the divisor that's required.
+
+	//calculate the divisor that's required.
     divisor     =  ((LPC24XX_USART::c_ClockRate / (BaudRate * 16)));
-    
     // CWS: Disable interrupts
     USARTC.UART_LCR = 0; // prepare to Init UART
     USARTC.SEL2.IER.UART_IER &= ~(LPC24XX_USART::UART_IER_INTR_ALL_SET);          // Disable all UART interrupts
     /* CWS: Set baud rate to baudRate bps */
-    USARTC.UART_LCR |= LPC24XX_USART::UART_LCR_DLAB;                              // prepare to access Divisor
+    USARTC.UART_LCR|= LPC24XX_USART::UART_LCR_DLAB;                                          // prepare to access Divisor
     USARTC.SEL1.DLL.UART_DLL = divisor & 0xFF;      //GET_LSB(divisor);                                                      // Set baudrate.
     USARTC.SEL2.DLM.UART_DLM = (divisor>>8) & 0xFF; // GET_MSB(divisor);
-    USARTC.UART_LCR&= ~LPC24XX_USART::UART_LCR_DLAB;                                              // prepare to access RBR, THR, IER
-    // CWS: Set port for 8 bit, 1 stop, no parity  
+	USARTC.UART_LCR&= ~LPC24XX_USART::UART_LCR_DLAB;                                              // prepare to access RBR, THR, IER
+	SetBoudrateDivisor( ComPortNum , BaudRate );
+	// CWS: Set port for 8 bit, 1 stop, no parity  
 
     // DataBit range 5-8
     if(5 <= DataBits && DataBits <= 8)
@@ -280,7 +313,7 @@ BOOL LPC24XX_USART_Driver::Initialize( int ComPortNum, int BaudRate, int Parity,
     }
     
     // CWS: Set the RX FIFO trigger level (to 8 bytes), reset RX, TX FIFO 
-    USARTC.SEL3.FCR.UART_FCR =  (LPC24XX_USART::UART_FCR_RFITL_01>> LPC24XX_USART::UART_FCR_RFITL_shift )  |
+    USARTC.SEL3.FCR.UART_FCR =  (LPC24XX_USART::UART_FCR_RFITL_08>> LPC24XX_USART::UART_FCR_RFITL_shift )  |
                                 LPC24XX_USART::UART_FCR_TFR      | 
                                 LPC24XX_USART::UART_FCR_RFR      |
                                 LPC24XX_USART::UART_FCR_FME;
@@ -289,9 +322,7 @@ BOOL LPC24XX_USART_Driver::Initialize( int ComPortNum, int BaudRate, int Parity,
 
     CPU_INTC_ActivateInterrupt( LPC24XX_USART::getIntNo(ComPortNum),
                                 UART_IntHandler,
-                                (void *)ComPortNum);    
-    USARTC.UART_TER = LPC24XX_USART::UART_TER_TXEN;
-    
+                                (void *)ComPortNum); 
     return fRet;
 }
 
@@ -345,11 +376,13 @@ void LPC24XX_USART_Driver::WriteCharToTxBuffer ( int ComPortNum, UINT8 c )
     while (FALSE == TxBufferEmpty(ComPortNum));        //wait till ready.
 
     //transmit the character.
-    USARTC.SEL1.THR.UART_THR = ui32Char;
-    // SET_BITS(USARTC.SEL1.THR.UART_THR,LPC24XX_USART::UART_THR_DATA_shift,LPC24XX_USART::UART_THR_DATA_mask,ui32Char);
+    //USARTC.SEL1.THR.UART_THR = ui32Char;
+	USARTC.SEL1.THR.UART_THR = ui32Char;
+
+   //  SET_BITS(USARTC.SEL1.THR.UART_THR,LPC24XX_USART::UART_THR_DATA_shift,LPC24XX_USART::UART_THR_DATA_mask,ui32Char);
     
     // special handling to newline ('\n' -> '\n\r').
-   // if (c == '\n') WriteCharToTxBuffer(ComPortNum, '\r');
+    //if (c == '\n') WriteCharToTxBuffer(ComPortNum, '\r');
 }
 
 void LPC24XX_USART_Driver::TxBufferEmptyInterruptEnable( int ComPortNum, BOOL Enable  )

@@ -147,9 +147,7 @@ void LPC24XX_Driver::Pause()
 
 void LPC24XX_Driver::Sleep()
 {
-    //LPC22XX::SYSCON().INTWAKE = 
-    //LPC22XX::SYSCON().PCON = 0x81;
-    while(LPC24XX_VIC::c_MaxInterruptIndex == LPC24XX::VIC().NormalInterruptPending());
+    // TODO TODO TODO complete implementation
 }
 
 void LPC24XX_Driver::Halt()
@@ -218,8 +216,8 @@ void __section(SectionForBootstrapOperations) PrepareImageRegions_IRAM()
 {
 
     UINT32  len = (UINT32 )&Image$$ER_IRAM$$Length; 
-    volatile UINT32* src = (volatile UINT32*)&Load$$ER_IRAM$$Base; 
-    volatile UINT32* dst = (volatile UINT32*)&Image$$ER_IRAM$$Base;
+    UINT32* src = (UINT32*)&Load$$ER_IRAM$$Base; 
+    UINT32* dst = (UINT32*)&Image$$ER_IRAM$$Base;
 
     if(dst == src) return;
     
@@ -234,8 +232,8 @@ void __section(SectionForBootstrapOperations) PrepareImageRegions_IRAM()
 
 void __section(SectionForBootstrapOperations) PrepareImageRegions_IRAM_TC()
 {
-    volatile UINT32* src = (volatile UINT32*)&Load$$ER_IRAM_TC$$Base; 
-    volatile UINT32* dst = (volatile UINT32*)&Image$$ER_IRAM_TC$$Base;
+    UINT32* src = (UINT32*)&Load$$ER_IRAM_TC$$Base; 
+    UINT32* dst = (UINT32*)&Image$$ER_IRAM_TC$$Base;
     UINT32  len = (UINT32 )&Image$$ER_IRAM_TC$$Length; 
 
     if(dst == src)  return;

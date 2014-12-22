@@ -154,7 +154,6 @@ BOOL LPC24XX_SPI_Driver::nWrite16_nRead16( const SPI_CONFIGURATION& Configuratio
         Transaction.Write16          = Write16;
         Transaction.WriteCount       = WriteCount;
         Transaction.SPI_mod          = Configuration.SPI_mod;
-        Transaction.BusyPin          = Configuration.BusyPin;
         
         if(!Xaction_nWrite16_nRead16( Transaction )) return FALSE;
     }
@@ -189,7 +188,6 @@ BOOL LPC24XX_SPI_Driver::nWrite8_nRead8( const SPI_CONFIGURATION& Configuration,
         Transaction.Write8          = Write8;
         Transaction.WriteCount      = WriteCount;
         Transaction.SPI_mod         = Configuration.SPI_mod;
-        Transaction.BusyPin         = Configuration.BusyPin;
         
         if(!Xaction_nWrite8_nRead8( Transaction )) return FALSE;
     }
