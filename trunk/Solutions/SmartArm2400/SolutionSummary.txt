@@ -1,0 +1,440 @@
+The .NET Micro Framework Solution Wizard will create the 'SmartArm2400' solution in the directory:
+
+	F:\MicroFrameworkPK_v4_1\\Solutions\SmartArm2400
+
+The following is a description of the components of this solution.  Each solution consists of a set of projects which in turn have a set of features and libraries.
+
+    Solution:                          	 SmartArm2400
+    Author:                            	 Life
+    Description:                       	 LPC2478
+    Processor:                         	 LPC24XX
+    Debugger Port:                     	 COM1
+
+
+Project NativeSample
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\NativeSample
+
+Libraries:
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    fs_pal_stubs:                      	 File System stub library
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    CRC:                               	 CRC library
+    FS_Config_stubs:                   	 File system config stub
+    system_initialization_hal:         	 System initialization library
+    TinyHal:                           	 Core HAL library
+    WireProtocol:                      	 Device communication protocol
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    Buttons_pal:                       	 Buttons library
+    COM_pal:                           	 Communication port director
+    config_pal:                        	 System configuration
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    heap_pal:                          	 Managed heap size and location configuration
+    LPC24XX_I2C:                       	 LPC24XX I2C driver
+    i2c_pal:                           	 I2C drivers
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    Display_Font8x8:                   	 Text Font (8x8 pixels)
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal:                       	 CRT functionality
+    LPC24XX_USART:                     	 LPC24XX USART driver
+    usart_pal:                         	 USART driver
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    blockstorage_pal:                  	 Block storage library
+    sockets_pal_stubs:                 	 Network socket stub driver
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    Time_pal:                          	 Time set of methods used by Time, Time
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    palevent_pal_stubs:                	 palevent set of methods used by Gesture, Ink
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    diagnostics_pal:                   	 Diagnostics library
+    DP83848_SmartArm2400:              	 
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    DP83848_SmartArm2400_LWIP:         	 
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    LCD_HAL_SmartArm2400:              	 TFT-G240320LTSW-118W display driver
+    cpu_cache_stubs:                   	 Cache stub library
+    TimeService_pal:                   	 Time set of methods used by Time, Time
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    timeservice_hal_stubs:             	 Time Service stub library
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+
+
+Project PortBooter
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\PortBooter
+
+Libraries:
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    CRC:                               	 CRC library
+    system_initialization_hal_loader:  	 System initialization (for boot loaders)
+    TinyHal_loader:                    	 Core HAL library (for boot loaders)
+    WireProtocol:                      	 Device communication protocol
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    Buttons_pal:                       	 Buttons library
+    COM_pal:                           	 Communication port director
+    config_pal_loader:                 	 System configuration boot loader library
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    heap_pal:                          	 Managed heap size and location configuration
+    i2c_pal:                           	 I2C drivers
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    LCD_HAL_SmartArm2400:              	 TFT-G240320LTSW-118W display driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    Display_Font8x8:                   	 Text Font (8x8 pixels)
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal_loader:                	 CRT functionality (for boot loaders)
+    LPC24XX_USART:                     	 LPC24XX USART driver
+    usart_pal:                         	 USART driver
+    DP83848_SmartArm2400:              	 
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    blockstorage_pal:                  	 Block storage library
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    sockets_pal_stubs:                 	 Network socket stub driver
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    Time_pal:                          	 Time set of methods used by Time, Time
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    palevent_pal_stubs:                	 palevent set of methods used by Gesture, Ink
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    fs_pal_stubs:                      	 File System stub library
+    FS_Config_stubs:                   	 File system config stub
+    cpu_i2c_stubs:                     	 I2C stub library
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    diagnostics_pal:                   	 Diagnostics library
+    cpu_cache_stubs:                   	 Cache stub library
+    TimeService_pal:                   	 Time set of methods used by Time, Time
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    timeservice_hal_stubs:             	 Time Service stub library
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+
+
+Project PortBooterLoader
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\PortBooter
+
+Libraries:
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    CRC:                               	 CRC library
+    WireProtocol:                      	 Device communication protocol
+    system_initialization_hal_loader:  	 System initialization (for boot loaders)
+    TinyHal_loader:                    	 Core HAL library (for boot loaders)
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    COM_pal:                           	 Communication port director
+    config_pal_loader:                 	 System configuration boot loader library
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    heap_pal:                          	 Managed heap size and location configuration
+    i2c_pal_stubs:                     	 I2C stub library
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal_loader:                	 CRT functionality (for boot loaders)
+    LPC24XX_USART:                     	 LPC24XX USART driver
+    usart_pal:                         	 USART driver
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    blockstorage_pal:                  	 Block storage library
+    sockets_pal_stubs:                 	 Network socket stub driver
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    Time_pal:                          	 Time set of methods used by Time, Time
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    palevent_pal_stubs:                	 palevent set of methods used by Gesture, Ink
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    fs_pal_stubs:                      	 File System stub library
+    FS_Config_stubs:                   	 File system config stub
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    diagnostics_pal:                   	 Diagnostics library
+    lcd_hal_stubs:                     	 Stub display driver
+    KeyPad_pal:                        	 KeyPad library
+    cpu_cache_stubs:                   	 Cache stub library
+    TimeService_pal:                   	 Time set of methods used by Time, Time
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    timeservice_hal_stubs:             	 Time Service stub library
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+
+
+Project Tinybooter
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\TinyBooter
+
+Libraries:
+    TinybooterLib:                     	 TinyBooter core library
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    CRC:                               	 CRC library
+    system_initialization_hal_loader:  	 System initialization (for boot loaders)
+    TinyHal_loader:                    	 Core HAL library (for boot loaders)
+    WireProtocol:                      	 Device communication protocol
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    Buttons_pal:                       	 Buttons library
+    COM_pal:                           	 Communication port director
+    config_pal_loader:                 	 System configuration boot loader library
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    heap_pal:                          	 Managed heap size and location configuration
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    i2c_pal_stubs:                     	 I2C stub library
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    Display_Font8x8:                   	 Text Font (8x8 pixels)
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal_loader:                	 CRT functionality (for boot loaders)
+    LPC24XX_USART:                     	 LPC24XX USART driver
+    usart_pal:                         	 USART driver
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    blockstorage_pal:                  	 Block storage library
+    sockets_pal_stubs:                 	 Network socket stub driver
+    Time_pal:                          	 Time set of methods used by Time, Time
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    palevent_pal_stubs:                	 palevent set of methods used by Gesture, Ink
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    fs_pal_stubs:                      	 File System stub library
+    FS_Config_stubs:                   	 File system config stub
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    diagnostics_pal:                   	 Diagnostics library
+    LCD_HAL_SmartArm2400:              	 TFT-G240320LTSW-118W display driver
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    cpu_cache_stubs:                   	 Cache stub library
+    TimeService_pal:                   	 Time set of methods used by Time, Time
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    timeservice_hal_stubs:             	 Time Service stub library
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+
+
+Project TinyBooterDecompressor
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\TinyBooter
+
+Libraries:
+    TinyBooterDecompressorLib:         	 TinyBooter decompressor library
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    CRC:                               	 CRC library
+    system_initialization_hal_loader:  	 System initialization (for boot loaders)
+    TinyHal_loader:                    	 Core HAL library (for boot loaders)
+    WireProtocol:                      	 Device communication protocol
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    COM_pal:                           	 Communication port director
+    config_pal_loader:                 	 System configuration boot loader library
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    heap_pal:                          	 Managed heap size and location configuration
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    i2c_pal_stubs:                     	 I2C stub library
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal_loader:                	 CRT functionality (for boot loaders)
+    usart_pal_stubs:                   	 USART stub driver
+    cpu_usart_stubs:                   	 USART stub library
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    lcd_hal_stubs:                     	 Stub display driver
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    blockstorage_pal:                  	 Block storage library
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    sockets_pal_stubs:                 	 Network socket stub driver
+    Time_pal:                          	 Time set of methods used by Time, Time
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    palevent_pal_stubs:                	 palevent set of methods used by Gesture, Ink
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    fs_pal_stubs:                      	 File System stub library
+    FS_Config_stubs:                   	 File system config stub
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    diagnostics_pal:                   	 Diagnostics library
+    KeyPad_pal:                        	 KeyPad library
+    cpu_cache_stubs:                   	 Cache stub library
+    TimeService_pal:                   	 Time set of methods used by Time, Time
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    timeservice_hal_stubs:             	 Time Service stub library
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+
+
+Project tinyclr
+    Description:                       	 
+    Path:                              	 Solutions\SmartArm2400\TinyCLR
+
+Features:
+    Core:                              	 Core functionality (required)
+    Hardware:                          	 Core hardware component
+    NativeEventDispatcher:             	 Native event dispatching for interop
+    Stream:                            	 Stream component
+    FileSystem:                        	 File system
+    Serialization:                     	 Data serialization support
+    BlockStorage:                      	 Block storage support
+    Crypto:                            	 Cryptographic functionality
+    Serial:                            	 Serial transport
+    Graphics:                          	 Core graphics functionality
+    TinyCore:                          	 TinyCore graphics subsystem
+    DataStorage:                       	 Data storage (extended weak reference storage)
+    Debugger:                          	 Visual Studio debugger support
+    XML:                               	 Xml utilities component
+    InterruptHandler:                  	 Support for interrupt handling
+    Diagnostics:                       	 Diagnostic utilities
+    SerialPort:                        	 Serial port component
+    SPI:                               	 SPI support
+    RPC:                               	 Remote procedure call support
+    NXP.SPOT.Interop:                  	 
+
+Libraries:
+    CLRStartup:                        	 Common CLR initialization library
+    Core:                              	 CLR core library
+    CorLib:                            	 Subset of mscorlib
+    Hardware:                          	 Core hardware functionality
+    SPOT:                              	 Common interop library
+    SPOT_Crypto:                       	 Crypto interop library
+    SPOT_Hardware_SerialPort:          	 SerialPort interop library
+    HeapPersistence:                   	 Extended weak references data storage 
+    Debugger:                          	 Visual Studio debugging support
+    Messaging:                         	 Core communication component
+    Graphics_Gif:                      	 GIF library for graphics subsystem
+    Graphics_Bmp:                      	 Bitmap support for graphics subsystem
+    Graphics:                          	 Graphics subsystem library
+    Graphics_Jpeg:                     	 JPEG library for graphics subsystem
+    SPOT_Graphics:                     	 Graphics interop library
+    InterruptHandler:                  	 Interrupt handler library
+    Xml:                               	 Native Xml functionality
+    SPOT_Serialization:                	 Serialization interop library
+    SPOT_IO:                           	 Stream interop library
+    CRC:                               	 CRC library
+    Stream:                            	 Generic stream functionality
+    Serialization:                     	 Binary serialization (proprietary format)
+    batterymeasurement_hal_stubs:      	 Battery measurement stub library
+    LargeBuffer_hal_stubs:             	 LargeBuffer stub library
+    batterycharger_hal_stubs:          	 Battery charger stub library
+    cpu_usb_stubs:                     	 USB stub library
+    usb_pal_stubs:                     	 USB stub driver
+    system_initialization_hal:         	 System initialization library
+    Debugger_full:                     	 Full Visual Studio debugging support
+    IOPort:                            	 Native event dispatcher (formerly IOPort)
+    SPOT_Hardware:                     	 Hardware interop library
+    TinyHal:                           	 Core HAL library
+    WireProtocol:                      	 Device communication protocol
+    asyncproccall_pal:                 	 Asynchronous procedure call library
+    Buttons_pal:                       	 Buttons library
+    COM_pal:                           	 Communication port director
+    config_pal:                        	 System configuration
+    Crypto:                            	 Cryptography library
+    cpu_ebiu_stubs:                    	 EBIU stub library
+    events_pal:                        	 System event library
+    GlobalLock_hal:                    	 Global lock (native threading control)
+    LPC24XX_GPIO:                      	 LPC24XX GPIO driver
+    graphics_pal:                      	 Graphics library
+    heap_pal:                          	 Managed heap size and location configuration
+    LPC24XX_WATCHDOG:                  	 LPC24XX watchdog driver
+    LPC24XX_VIC:                       	 LPC24XX interrupt controller driver
+    cpu_mmu_stubs:                     	 Memory management unit stub library
+    Display_Font8x8:                   	 Text Font (8x8 pixels)
+    piezo_pal_stubs:                   	 Piezo stub driver
+    LPC24XX_Power:                     	 LPC24XX power driver
+    LPC24XX_PreStackInit:              	 LPC24XX processor pre-stack initialization
+    LPC24xx_Security:                  	 LPC24xx security driver
+    LPC24XX_TIME:                      	 LPC24XX time driver
+    tinycrt_pal:                       	 CRT functionality
+    LPC24XX_USART:                     	 LPC24XX USART driver
+    usart_pal:                         	 USART driver
+    LPC24XX_Bootstrap:                 	 LPC24XX bootstrap driver
+    LPC24XX_LCDC:                      	 LPC24XX LCD Controller driver
+    SST39WF_16BL:                      	 SST39WF 16-bit flash block storage driver
+    blockstorage_pal:                  	 Block storage library
+    I2C_stub:                          	 I2C stub library
+    i2c_pal_stubs:                     	 I2C stub library
+    SimpleHeap_config_stubs:           	 SimpleHeap configuration stub library
+    palevent_pal:                      	 palevent set of methods used by Gesture, Ink
+    Gesture_pal_stubs:                 	 Gesture set of methods used by Gesture, Ink
+    Ink_pal_stubs:                     	 Ink set of methods used by Ink, Ink
+    Time_pal:                          	 Time set of methods used by Time, Time
+    backlight_hal_stubs:               	 Backlight HAL stub library
+    cpu_i2c_stubs:                     	 I2C stub library
+    diagnostics_pal:                   	 Diagnostics library
+    Diagnostics:                       	 Diagnostic functionality
+    cpu_performancecounter_stubs:      	 Performance counter stub library
+    System_Xml:                        	 Xml interop library
+    SPOT_Messaging:                    	 Messaging interop library
+    RPC:                               	 Remote procedure call support
+    LPC24XX_SPI:                       	 LPC24XX SPI driver
+    fs_pal:                            	 File system PAL Driver
+    sockets_pal_stubs:                 	 Network socket stub driver
+    FS_FAT:                            	 FAT file system 
+    LCD_HAL_SmartArm2400:              	 TFT-G240320LTSW-118W display driver
+    BlockStorageConfig_HAL_SmartArm2400:	 Block storage SST39VF320_16 config for SmartArm2400
+    BlockStorage_AddDevices_SmartArm2400:	 Block storage add device driver for SmartArm2400
+    VirtualKey_HAL_SmartArm2400:       	 Virtual key stub library
+    LPC24XX_Bootstrap_HAL_SmartArm2400:	 Bootstrap library for SmartArm2400 solution
+    NXP_SPOT_Interop:                  	 
+    FS_Config_SmartArm2400:            	 FS config driver for iMXS solution
+    cpu_cache_stubs:                   	 Cache stub library
+    Watchdog_pal:                      	 Watchdog set of methods used by Watchdog feature
+    SimpleHeap_stubs:                  	 SimpleHeap unmanaged heap stub library
+    TimeService_pal_stubs:             	 TimeService set of methods used by TimeService, TimeService

@@ -1,0 +1,45 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>RAM_blconfig_Micro2440SDK</AssemblyName>
+    <Size>
+    </Size>
+    <ProjectGuid>{6d141abc-a00f-411c-92f0-e467662fe420}</ProjectGuid>
+    <Description>Block storage configuration for Micro2440SDK</Description>
+    <Level>HAL</Level>
+    <LibraryFile>RAM_blconfig_Micro2440SDK.$(LIB_EXT)</LibraryFile>
+    <ProjectPath>$(SPOCLIENT)\Solutions\Micro2440SDK\DeviceCode\Blockstorage\config\dotNetMF.proj</ProjectPath>
+    <ManifestFile>RAM_blconfig_Micro2440SDK.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>Solutions\Micro2440SDK</Groups>
+    <LibraryCategory>
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BlockStorageConfig_HAL" Guid="{497F59BB-55D3-404e-B958-A6284806D184}" ProjectPath="" xmlns="">
+        <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
+          <Major>4</Major>
+          <Minor>0</Minor>
+          <Revision>0</Revision>
+          <Build>0</Build>
+          <Extra />
+          <Date>2009-04-30</Date>
+        </VersionDependency>
+        <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">LibraryCategory</ComponentType>
+      </MFComponent>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <CustomSpecific>Micro2440SDK</CustomSpecific>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>False</IsStub>
+    <Directory>Solutions\Micro2440SDK\DeviceCode\Blockstorage\config</Directory>
+    <OutputType>Library</OutputType>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="RAM_BlConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

@@ -1,0 +1,21 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Directory>Solutions\STM32F103ZET\DeviceCode\LLFeng</Directory>
+    <AssemblyName>LLFeng</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+<ItemGroup>
+<HFile Include="LLFeng.h" />
+<Compile Include="LLFeng.cpp" />
+<Compile Include="LLFeng_LLFeng_Beep_mshl.cpp" />
+<HFile Include="LLFeng_LLFeng_Beep.h" />
+<Compile Include="LLFeng_LLFeng_Beep.cpp" />
+<Compile Include="LLFeng_LLFeng_TPAD_mshl.cpp" />
+<HFile Include="LLFeng_LLFeng_TPAD.h" />
+<Compile Include="LLFeng_LLFeng_TPAD.cpp" />
+</ItemGroup>
+<Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

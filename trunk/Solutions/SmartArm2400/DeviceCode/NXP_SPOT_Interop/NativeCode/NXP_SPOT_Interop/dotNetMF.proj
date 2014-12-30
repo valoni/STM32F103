@@ -1,0 +1,18 @@
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Directory>Solutions\SmartArm2400\DeviceCode\NXP_SPOT_Interop\NativeCode\NXP_SPOT_Interop</Directory>
+    <AssemblyName>NXP_SPOT_Interop</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+<ItemGroup>
+<HFile Include="NXP_SPOT_Interop.h" />
+<Compile Include="NXP_SPOT_Interop.cpp" />
+<Compile Include="NXP_SPOT_Interop_NXP_SPOT_Interop_ReadAndWriteMemory_mshl.cpp" />
+<HFile Include="NXP_SPOT_Interop_NXP_SPOT_Interop_ReadAndWriteMemory.h" />
+<Compile Include="NXP_SPOT_Interop_NXP_SPOT_Interop_ReadAndWriteMemory.cpp" />
+</ItemGroup>
+<Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

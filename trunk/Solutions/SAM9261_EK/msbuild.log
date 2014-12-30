@@ -1,0 +1,14 @@
+Build started 2014/12/2 18:16:00.
+     1>Project "C:\PK\Solutions\SAM9261_EK\dotnetmf.proj" on node 1 (build target(s)).
+     1>C:\PK\Solutions\SAM9261_EK\dotnetmf.proj(17,1): error MSB4025: The project file could not be loaded. Unexpected end of file while parsing Comment has occurred. Line 17, position 1.
+     1>Done Building Project "C:\PK\Solutions\SAM9261_EK\dotnetmf.proj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+       "C:\PK\Solutions\SAM9261_EK\dotnetmf.proj" (build target) (1) ->
+         C:\PK\Solutions\SAM9261_EK\dotnetmf.proj(17,1): error MSB4025: The project file could not be loaded. Unexpected end of file while parsing Comment has occurred. Line 17, position 1.
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.02

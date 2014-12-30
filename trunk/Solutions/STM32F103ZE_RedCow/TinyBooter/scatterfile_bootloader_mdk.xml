@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<ScatterFile xmlns="http://schemas.microsoft.com/netmf/ScatterfileSchema.xsd">
+
+    <!-- ################################################################################ -->
+		<Set Name="RAM_BaseAddress"       		Value="0x20000000"/>
+
+		<!-- All the Heap,Custom_Heap and Stack are in the internal 64K RAM of STM32F103ZE -->
+    <!--
+    <Set Name="Heap_Begin"      Value="0x2000B000"/>
+    <Set Name="Heap_End"        Value="0x2000DFFC"/>
+    <Set Name="Stack_Bottom"    Value="+0"/>
+    <Set Name="Stack_Top"       Value="0x2000FFFC"/>
+    -->
+    
+    <!-- Heap is in the external RAM,and Stack is in the internal 64K RAM of STM32F103ZE -->
+    <!--
+		<Set Name="Heap_Begin"          Value="0x68000000"/>
+		<Set Name="Heap_End"            Value="0x6801FFFC"/>
+		<Set Name="Stack_Bottom"   			Value="0x2000EFFC"/>
+		<Set Name="Stack_Top"     			Value="0x2000FFFC"/>
+		-->
+
+    
+    <!-- Heap and Stack are in the external RAM-->
+		<Set Name="Heap_Begin"          Value="0x68000000"/>
+		<Set Name="Heap_End"            Value="0x6801DFFC"/>
+		<Set Name="Stack_Bottom"   			Value="0x6801E000"/>
+		<Set Name="Stack_Top"     			Value="0x6801FFFC"/>
+
+		
+		
+
+
+		<Set Name="Code_BaseAddress"    Value="0x08000000"/>
+		<Set Name="Code_Size"           Value="0x00080000" />
+		
+		
+    <!-- the address and sizes for both load regions (LR_*) are chosen to start and completely fill a flash partition in the 28F320W18 flash chip -->
+
+    <LoadRegion Name="LR_%TARGETLOCATION%" Base="%Code_BaseAddress%" Options="ABSOLUTE" Size="%Code_Size%">
+
+        <!-- we have arbitrarily asigned 0x00080000 offset in FLASH for the CLR code, and size of 0x00080000 -->
+
+        <ExecRegion Name="ER_%TARGETLOCATION%" Base="%Code_BaseAddress%" Options="FIXED" Size="">
+						<FileMapping Name="VectorsTrampolines.obj" Options="(+RO, +FIRST)" /> <!-- for vector handlers to be far from the vectors -->
+            <FileMapping Name="FirstEntry.obj"   Options="(+RO)" /> <!-- the entry pointer section goes into this region -->
+            <FileMapping Name="*" Options="(SectionForBootstrapOperations)" />
+						
+        </ExecRegion>
+
+        <!-- skip vector area -->
+
+        <ExecRegion Name="ER_RAM_RO" Base="%RAM_BaseAddress%" Options="ABSOLUTE" Size="">
+
+            <!-- all code and constants are in RAM, 0-WS, 32-bit wide -->
+
+            <FileMapping Name="*" Options="(+RO)" /> <!-- this must live somewhere other than RAM, for all but RAM builds -->
+
+        </ExecRegion>
+
+        <ExecRegion Name="ER_RAM_RW" Base="+0" Options="ABSOLUTE" Size="">
+
+            <FileMapping Name="*"                Options="(+RW-DATA, +ZI)" />
+
+        </ExecRegion>
+
+        <ExecRegion Name="ER_HEAP_BEGIN" Base="%Heap_Begin%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForHeapBegin)" />
+        </ExecRegion>
+
+        <!-- everything between heapbegin and heapend will be allocated for a heap -->
+
+        <ExecRegion Name="ER_HEAP_END" Base="%Heap_End%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForHeapEnd)" />
+        </ExecRegion>
+
+
+        <!-- this must go last here to provide a low water mark on the stack -->
+
+        <ExecRegion Name="ER_STACK_BOTTOM" Base="%Stack_Bottom%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForStackBottom)" />
+        </ExecRegion>
+	    
+        <ExecRegion Name="ER_STACK_TOP" Base="%Stack_Top%" Options="ABSOLUTE" Size="UNINIT">
+            <FileMapping Name="*" Options="(SectionForStackTop)" />
+        </ExecRegion>
+
+    </LoadRegion>
+
+</ScatterFile>
