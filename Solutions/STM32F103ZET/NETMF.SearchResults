@@ -1,3 +1,0 @@
----- AT91_UNUSED_GPIOS Æ¥Åä (2 in 1 ÎÄ¼þ) ----
-AT91_GPIO.cpp (devicecode\targets\native\at91\devicecode\at91_gpio):#if defined(AT91_UNUSED_GPIOS)
-AT91_GPIO.cpp (devicecode\targets\native\at91\devicecode\at91_gpio):        static const UnusedGPIO c_Unused[] = { AT91_UNUSED_GPIOS };
