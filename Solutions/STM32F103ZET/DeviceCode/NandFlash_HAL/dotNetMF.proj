@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>NandFlash_HAL_STM32F103ZET</AssemblyName>
+    <ProjectGuid>{0A6FB756-4F15-4ac6-B21F-59E3B7CF1CF6}</ProjectGuid>
+    <Size>
+    </Size>
+    <Description>NandFlash stub library</Description>
+    <Level>HAL</Level>
+    <LibraryFile>NandFlash_HAL_STM32F103ZET.$(LIB_EXT)</LibraryFile>
+    <ProjectPath>$(SPOCLIENT)\Solutions\STM32F103ZET\DeviceCode\NandFlash_HAL\dotNetMF.proj</ProjectPath>
+    <ManifestFile>NandFlash_HAL_STM32F103ZET.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>Processor\stubs</Groups>
+    <LibraryCategory>
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="NandFlash_HAL" Guid="{718988E9-6E5B-4A91-A3A6-B4BD777AA998}" ProjectPath="" Conditional="" xmlns="">
+        <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
+          <Major>4</Major>
+          <Minor>0</Minor>
+          <Revision>0</Revision>
+          <Build>0</Build>
+          <Extra />
+          <Date>2009-04-30</Date>
+        </VersionDependency>
+        <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">LibraryCategory</ComponentType>
+      </MFComponent>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <CustomFilter>
+    </CustomFilter>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>false</IsStub>
+    <Directory>Solutions\STM32F103ZET\DeviceCode\NandFlash_HAL</Directory>
+    <OutputType>Library</OutputType>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="fsmc_nand.cpp" />
+	<Compile Include="BlockStorageDriver_Nand.cpp" />
+  </ItemGroup>
+  <ItemGroup> 
+   	<IncludePaths Include="DeviceCode\Targets\Native\STM32\DeviceCode\Libraries\Configure" /> 
+	<IncludePaths Include="DeviceCode\Targets\Native\STM32\DeviceCode\Libraries\STM32_StdPeriph_Driver\inc" /> 
+  	<IncludePaths Include="DeviceCode\Targets\Native\STM32\DeviceCode\Libraries\CMSIS\Core\CM3\" />   
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

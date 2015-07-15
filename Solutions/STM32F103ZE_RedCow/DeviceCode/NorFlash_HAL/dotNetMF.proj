@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>NorFlash_HAL_STM32F103ZE_RedCow</AssemblyName>
+    <ProjectGuid>{E840F32D-9F55-4327-B2C4-6A94E00E8FAF}</ProjectGuid>
+    <Size>
+    </Size>
+    <Description>NorFlash stub library</Description>
+    <Level>HAL</Level>
+    <LibraryFile>NorFlash_HAL_STM32F103ZE_RedCow.$(LIB_EXT)</LibraryFile>
+    <ProjectPath>$(SPOCLIENT)\Solutions\STM32F103ZE_RedCow\DeviceCode\NorFlash_HAL\dotNetMF.proj</ProjectPath>
+    <ManifestFile>NorFlash_HAL_STM32F103ZE_RedCow.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>Processor\stubs</Groups>
+    <LibraryCategory>
+      <MFComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="NorFlash_HAL" Guid="{718988E9-6E5B-4A91-A3A6-B4BD777AA998}" ProjectPath="" Conditional="" xmlns="">
+        <VersionDependency xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">
+          <Major>4</Major>
+          <Minor>0</Minor>
+          <Revision>0</Revision>
+          <Build>0</Build>
+          <Extra />
+          <Date>2009-04-30</Date>
+        </VersionDependency>
+        <ComponentType xmlns="http://schemas.microsoft.com/netmf/InventoryFormat.xsd">LibraryCategory</ComponentType>
+      </MFComponent>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <CustomFilter>
+    </CustomFilter>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>false</IsStub>
+    <Directory>Solutions\STM32F103ZE_RedCow\DeviceCode\NorFlash_HAL</Directory>
+    <OutputType>Library</OutputType>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="fsmc_nor.cpp" />
+  </ItemGroup>
+  <ItemGroup> 
+   	<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\Configure" /> 
+		<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\STM32F10x_StdPeriph_Driver\inc" /> 
+  	<IncludePaths Include="DeviceCode\Targets\Native\STM32F10x\DeviceCode\Libraries\CMSIS\Core\CM3\" />   
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>

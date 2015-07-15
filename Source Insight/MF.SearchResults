@@ -1,0 +1,13 @@
+---- I2C_Internal_Initialize Matches (12 in 12 files) ----
+AT91_I2C_functions.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\at91\devicecode\at91_i2c):BOOL I2C_Internal_Initialize()
+I2c.cpp (d:\microframeworkpk_v4_3\devicecode\pal\com\i2c):    if(!I2C_Internal_Initialize()) return FALSE;
+I2C_decl.h (d:\microframeworkpk_v4_3\devicecode\include):BOOL  I2C_Internal_Initialize  (                                              );
+LPC22XX__I2C.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\lpc22xx\devicecode\i2c):BOOL I2C_Internal_Initialize()
+LPC24XX__I2C.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\lpc24xx\devicecode\i2c):BOOL I2C_Internal_Initialize()
+MC9328MXL_i2c_functions.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\mc9328\devicecode\mc9328mxl_i2c):BOOL I2C_Internal_Initialize()
+PXA271_i2c_functions.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\pxa271\devicecode\pxa271_i2c):BOOL I2C_Internal_Initialize()
+SH7264_I2C.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\sh7264\devicecode\i2c):BOOL I2C_Internal_Initialize()
+STM32F4_i2c_functions.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\stm32f4\devicecode\stm32f4_i2c):BOOL I2C_Internal_Initialize()
+STM32_i2c_functions.cpp (d:\microframeworkpk_v4_3\devicecode\targets\native\stm32\devicecode\stm32_i2c):BOOL I2C_Internal_Initialize()
+STMPE811_driver.cpp (d:\microframeworkpk_v4_3\solutions\stm3240g\devicecode\touchpanel)://	I2C_Internal_Initialize();
+stubs_functions_I2C.cpp (d:\microframeworkpk_v4_3\devicecode\drivers\stubs\processor\stubs_i2c):BOOL I2C_Internal_Initialize()
